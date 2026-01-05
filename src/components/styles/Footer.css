@@ -1,0 +1,52 @@
+.Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Footer_logo {
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+    margin-bottom: 20px;
+}
+
+.Footer_links {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+    height: 240px;
+}
+
+.Footer_links_site,
+.Footer_links_nossas_redes,
+.Footer_links_da_apyb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    
+    & h4 {
+        margin-bottom: 15px;
+    }
+    & ul {
+        margin-bottom: 5px;
+    }
+}
+
+.Footer_links_botoes_politicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 240px;
+
+    & .Footer_links_botoes_politicas_buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
