@@ -1,8 +1,10 @@
 .Footer {
+    /* border: 2px red solid; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .Footer_logo {
@@ -13,12 +15,15 @@
 }
 
 .Footer_links {
+    /* border: 2px red solid; */
     display: flex;
     flex-direction: row;
     align-items: start;
-    justify-content: space-between;
+    justify-content: space-evenly;
+
     gap: 10px;
     height: 240px;
+    width: 100%;
 }
 
 .Footer_links_site,
