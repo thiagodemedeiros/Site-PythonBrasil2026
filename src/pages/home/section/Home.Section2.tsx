@@ -4,7 +4,7 @@ import cobra_esquerda_section2 from "/cobra_esquerda_section2.png"
 import cobra_direita_section2 from "/cobra_direita_section2.png"
 
 
-export default function Home_Section1() {
+export default function Home_Section2() {
     return(<section className="Home_Section2">
         <div className="Home_Section2_parte_esquerda">
             <img src={foto} alt="" />

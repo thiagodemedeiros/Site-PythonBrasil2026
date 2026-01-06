@@ -1,0 +1,87 @@
+.Home_Section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px ;
+
+    width: 100%;
+
+    /* border: 2px red solid; */
+
+    background-color: black;
+}
+
+.Home_Section3_carrossel_keynotes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0px;
+
+    background-color: green;
+    width: 1000px;
+}
+
+.Home_Sectine3_carrossel_card_keynote {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+
+    background-color: black;
+    width: 600px;
+}
+
+.Home_Section3_carrossel_card_keynote_parte_esquerda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    & li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        & img {
+            width: 35px;
+        }
+    }
+
+    & img {
+        width: 200px;
+    }
+}
+
+.Home_Section3_carrossel_card_keynote_parte_direita {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+
+    color: aliceblue;
+
+    & h4 {
+        margin-bottom: 25px;
+    }
+
+    & p {
+        margin-bottom: 10px;
+    }
+}
+
+.Home_Section3_carrossel_foto_selecao_keynote {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
