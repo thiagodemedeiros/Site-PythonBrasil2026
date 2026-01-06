@@ -6,7 +6,7 @@
 
     width: 100%;
     /* height: 700px; */
-    height: 83vh;
+    height: 500px;
     /* border: 2px red solid; */
 }
 
@@ -21,7 +21,7 @@
 
     & img {
         width: 100%;
-        height: 83vh;
+        height: 500px;
         object-fit: cover;
     }
 }
@@ -37,7 +37,7 @@
     position: relative;
 
     width: 50%;
-    height: 83vh;
+    height: 500px;
     /* border: 2px red solid; */
 }
 
@@ -50,7 +50,7 @@
     text-align: left;
 
     /* font-size: 30px; */
-    font-size: clamp(5px, 2rem, 30px);
+    font-size: clamp(20px, 1.3rem, 30px);
     z-index: 2;
 
     & p {
