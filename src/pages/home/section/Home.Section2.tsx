@@ -11,9 +11,9 @@ export default function Home_Section1() {
         </div>
         <div className="Home_Section2_parte_direita">
             <div className="Home_Section2_parte_direita_texto">
-                <p>A Python Brasil 2026 é a maior conferência sobre linguagem de programação Python do Brasil e da América Latina.</p>
+                <p>A <span>Python Brasil 2026</span> é a maior conferência sobre linguagem de programação Python do Brasil e da América Latina.</p>
                 <p>Serão 5 dias de imersão com atividades que vão desde contribuir para projetos de software livre, participar de treinamentos e adquirir novos conhecimentos com profissionais renomados da comunidade.</p>
-                <p>A edição de 2026 está sendo organizada pela comunidade Python de Florianópolis/SC com o apoio da APyB (Associação Python Brasil)</p>
+                <p>A edição de 2026 está sendo organizada pela comunidade Python de <span>Florianópolis/SC</span> com o apoio da APyB (Associação Python Brasil)</p>
             </div>
             <div className="Home_Section2_parte_direita_cobrinhas">
                 <img src={cobra_esquerda_section2} alt="" />
