@@ -29,7 +29,10 @@
 .Home_Section4_cobras {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
     justify-content: center;
     margin-top: 70px;
+
+    & img {
+        width: 50%;
+    }
 }

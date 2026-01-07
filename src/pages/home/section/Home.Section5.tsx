@@ -2,7 +2,7 @@ import "../styles/Home.Section5.css"
 import mini_logo from '/mini_logo_pybr_carrossel.png'
 import cidade from '/img/page/home/section5/cidade.png'
 
-export default function Home_Section4() {
+export default function Home_Section5() {
     return(<section className="Home_Section5">
             <div className="Home_Section5_itens">
                 <div className="Home_Section5_itens_texto">

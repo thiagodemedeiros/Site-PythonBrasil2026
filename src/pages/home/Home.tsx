@@ -3,6 +3,7 @@ import Home_Section2 from "./section/Home.Section2"
 import Home_Section3 from "./section/Home.Section3"
 import Home_Section4 from "./section/Home.Section4"
 import Home_Section5 from "./section/Home.Section5"
+import Home_Section6 from "./section/Home.Section6"
 
 export default function Home() {
     return(<>
@@ -11,5 +12,6 @@ export default function Home() {
         <Home_Section3/>
         <Home_Section4/>
         <Home_Section5/>
+        <Home_Section6/>
     </>)
 }

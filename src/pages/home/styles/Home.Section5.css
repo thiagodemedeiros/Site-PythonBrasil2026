@@ -3,6 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    background-color: #0f0f0f;
 }
 
 .Home_Section5_itens {
@@ -10,6 +12,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+    padding: 70px 0px;
 
     & img {
         height: 400px;
@@ -19,10 +23,12 @@
 .Home_Section5_itens_texto {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
 
     width: 40%;
+
+    color: aliceblue;
 
     & h4 {
         margin-bottom: 15px;
@@ -39,6 +45,7 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
+    width: 70%;
 }
 
 .Home_Section5_carrossel {
