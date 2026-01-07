@@ -1,0 +1,35 @@
+.Home_Section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 70px;
+    background-color: #e8f4ba;
+}
+
+.Home_Section4_itens_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.Home_Section4_itens_texto_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    margin-bottom: 30px;
+}
+
+.Home_Section4_cobras {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}

@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 80px ;
 
     width: 100%;
 
@@ -18,6 +17,7 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    margin: 80px;
     padding: 40px 0px;
 
     background-color: green;
@@ -84,4 +84,20 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+.Home_Section3_carrossel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #b7ff06;
+
+    width: 100%;
+    height: 25px;
+
+    & img {
+        width: auto;
+        height: 15px;
+    }
 }
