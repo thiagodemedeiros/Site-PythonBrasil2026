@@ -8,7 +8,7 @@
 .carrossel-track {
   display: flex;
   width: 100%;
-  animation: scroll 100s linear infinite;
+  animation: scroll 150s linear infinite;
 }
 
 /* CADA BLOCO = 50% */
