@@ -8,10 +8,11 @@ import key_dot_1 from "/img/page/home/section3/key_dot_1.png"
 import key_dot_2 from "/img/page/home/section3/key_dot_2.png"
 import key_dot_3 from "/img/page/home/section3/key_dot_3.png"
 import key_dot_4 from "/img/page/home/section3/key_dot_4.png"
-import mini_logo from '/mini_logo_pybr_carrossel.png'
+import Carrossel from "../../../components/Carrossel"
 
 export default function Home_Section3() {
-    return(<section className="Home_Section3">
+    return(<>
+    <section className="Home_Section3">
         <div className="Home_Section3_carrossel_keynotes">
             <h4>Keynotes</h4>
             <div className="Home_Sectine3_carrossel_card_keynote">
@@ -37,12 +38,7 @@ export default function Home_Section3() {
                 <img src={key_dot_4} alt="" />
             </div>
         </div>
-        <div className="Home_Section3_carrossel">
-            {/* TODO
-                implementar o carrossel */}
-            <p>pela comunidade</p>
-            <img src={mini_logo} alt="" />
-            <p>para comunidade</p>
-        </div>
-    </section>)
+    </section>
+    <Carrossel/>
+    </>)
 }

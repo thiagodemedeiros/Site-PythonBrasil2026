@@ -6,7 +6,7 @@
 
     width: 100%;
     /* height: 700px; */
-    height: 500px;
+    height: 600px;
     /* border: 2px red solid; */
 }
 
@@ -21,7 +21,7 @@
 
     & img {
         width: 100%;
-        height: 500px;
+        height: 600px;
         object-fit: cover;
     }
 }
@@ -30,14 +30,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 70px;
+    justify-content: center;
+    padding: 0px;
     background-color: #e8f4ba;
 
     position: relative;
 
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+
     width: 50%;
-    height: 500px;
+    height: 600px;
     /* border: 2px red solid; */
 }
 
@@ -48,9 +51,10 @@
     justify-content: center;
     gap: 30px;
     text-align: left;
+    margin-top: -70px;
 
     /* font-size: 30px; */
-    font-size: clamp(20px, 1.3rem, 30px);
+    font-size: clamp(16px, 1.2rem, 30px);
     z-index: 2;
 
     & p {
