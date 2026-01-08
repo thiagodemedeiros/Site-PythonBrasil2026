@@ -15,6 +15,19 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+
+    & h4 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    & a {
+        font-weight: 600;
+        color: #de35d0;
+        text-decoration-line: underline;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 1.2px;
+    }
 }
 
 .Home_Section4_itens_texto_buttons {
@@ -25,6 +38,26 @@
     gap: 30px;
 
     margin-bottom: 30px;
+}
+
+.Home_Section4_buttons_1, .Home_Section4_buttons_2 {
+    font-size: 18px;
+    font-weight: 350;
+    padding: 18px 32px;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.Home_Section4_buttons_1 {
+    background-color: black;
+    color: aliceblue;
+}
+
+.Home_Section4_buttons_2 {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    border: 1px black solid;
 }
 
 .Home_Section4_cobras {
