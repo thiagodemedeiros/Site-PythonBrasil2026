@@ -1,17 +1,20 @@
 .Header {
     font-family: "Inter", sans-serif;
     font-weight: 400;
+
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 35px 0px;
+
     gap: 20px;
     margin-bottom: -5px;
 
     background-color: #0f0f0f;
     color: aliceblue;
 
+    width: 100%;
     /* border: 2px red solid; */
 }
 
@@ -20,7 +23,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 95%;
     max-width: 1440px;
     /* border: 2px red solid; */
 }
@@ -30,8 +33,10 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
-        gap: 40px;
+        justify-content: space-between;
+        width: 35vw;
+        max-width: 450px;
+        /* border: 2px red solid; */
     }
 
     & ul {
@@ -49,6 +54,7 @@
     & img {
         width: auto;
         height: auto;
+        margin: 0 20px;
     }
 }
 
@@ -65,8 +71,10 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
-        gap: 40px;
+        justify-content: space-between;
+        width: 15vw;
+        max-width: 150px;
+        /* border: 2px red solid; */
     }
 
     & ul:hover {
