@@ -1,9 +1,11 @@
 import "./styles/Footer.css"
+import logo from "/img/components/footer/logo.png"
 
 export default function Footer() {
     return (<footer className="Footer">
+            <div className="Footer_barra_verde"></div>
         <div className="Footer_logo">
-            <img src="" alt="LOGO" />
+            <img src={logo} alt="LOGO" />
         </div>
         <div className="Footer_links">
             <div className="Footer_links_site">

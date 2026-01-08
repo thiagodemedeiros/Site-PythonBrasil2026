@@ -1,4 +1,5 @@
 .Home_Section6 {
+    font-family: "Inter", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,6 +13,10 @@
     & h4 {
         color: aliceblue;
         margin-bottom: 40px;
+    }
+
+    & button {
+        font-family: "Inter", sans-serif;
     }
 }
 
@@ -38,6 +43,10 @@
 
     & img {
         width: 100%;
+    }
+
+    & h5 {
+        font-family: "Cascadia Mono", sans-serif;
     }
 }
 

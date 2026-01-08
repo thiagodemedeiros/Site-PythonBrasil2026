@@ -93,6 +93,8 @@ export default function Home_Section6() {
                     <img src={Reprograma} alt="" />
                 </div>
             </div>
+
+            <div className="Home_Section7_patrocinadores_bandeira_linha"></div>
             
         </div>
         <img src={cobra_baixo} alt="" className="Home_Section7_cobra_baixo"/>
