@@ -71,3 +71,42 @@
     font-weight: 500;
     font-size: 16px;
 }
+
+@media (max-width : 1000px) {
+    .Home_Section5_itens {
+        flex-direction: column;
+        gap: 50px;
+        width: 80%;
+        /* border: 2px red solid; */
+
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .Home_Section5_itens_texto {
+        width: 100%;
+
+        & h4 {
+            margin-bottom: 30px;
+        }
+
+        & a {
+            margin-top: 40px;
+        }
+    }
+
+    .Home_Section5_itens_texto_p {
+        gap: 25px;
+
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .Home_Section5_itens_texto button {
+        padding: 0;
+        height: 60px;
+        width: 80vw;
+    }
+}
