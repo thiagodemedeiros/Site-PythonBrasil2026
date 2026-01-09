@@ -10,7 +10,7 @@ export default function Home_Section4() {
                     <a href=""><button className="Home_Section4_buttons_1">Enviar Atividade</button></a>
                     <a href=""><button className="Home_Section4_buttons_2">Regulamento</button></a>
                 </div>
-                <a href="">Acompanhe as novidades nas nossas redes sociais</a>
+                <a href=""><p>Acompanhe as novidades nas nossas redes sociais</p></a>
             </div>
             <div className="Home_Section4_cobras">
                 <img src={cobra_1} alt="" />
