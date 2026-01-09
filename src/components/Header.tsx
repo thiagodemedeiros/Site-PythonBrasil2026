@@ -1,16 +1,59 @@
 import "./styles/Header.css"
+import "./styles/Menu.css"
+import { useState } from 'react';
 import icone_acima_do_menu from "/img/components/header/icone_acima_do_menu.png"
 import logo from "/img/components/header/logo.png"
+import logo_menu from "/img/components/menu/Logo.svg"
+import X_menu from "/img/components/menu/X.svg"
+import surf_menu from "/img/components/menu/surf.svg"
 
 export default function Header() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     return (<header className="Header">
         <div className="Header_itens">
             <div className="Header_menu_esquerdo">
                 <li>
                     <ul>
                         <div>
-                            <img src={icone_acima_do_menu} alt="" />
-                            <h4>MENU</h4>
+                            <img src={icone_acima_do_menu} alt="" onClick={() => setIsModalOpen(true)}/>
+                            <h4 onClick={() => setIsModalOpen(true)}>MENU</h4>
+
+
+                            <div className={`Menu ${isModalOpen ? "aberto" : ""}`}>
+                                <div className="Menu_itens">
+                                    <div className="Menu_itens_botoes">
+                                        <div className="Menu_itens_botoes_linha1">
+                                            <img src={logo_menu} alt="" />
+                                            <div className="Menu_itens_botoes_linha1_fechar">
+                                                <img src={X_menu} alt="" onClick={() => setIsModalOpen(false)}/>
+                                                <p>Fechar</p>
+                                            </div>
+                                        </div>
+                                        <div className="Menu_itens_botoes_linha2">
+                                            <a href="">INÍCIO</a>
+                                            <a href="">O EVENTO</a>
+                                            <a href="">KEYNOTES</a>
+                                            <a href="">ROGRAMAÇÃO</a>
+                                            <a href="">GUIA DA CIDADE</a>
+                                            <a href="">PATROCINADORES</a>
+                                            <a href="">FAQ</a>
+                                            <a href="">CONTATO</a>
+                                        </div>
+                                        <div className="Menu_itens_botoes_linha3">
+                                            <a href="">
+                                                <button>Comprar Ingressos!</button>
+                                            </a>
+                                            <a href="">
+                                                <button>Plano de Patrocínio</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <img src={surf_menu} alt="" className="Menu_itens_surfista"/>
+                                </div>
+                            </div>
+
+
                         </div>
                     </ul>
                     <ul>O evento</ul>
