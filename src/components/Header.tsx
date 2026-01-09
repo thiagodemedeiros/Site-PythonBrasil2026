@@ -2,7 +2,7 @@ import "./styles/Header.css"
 import "./styles/Menu.css"
 import { useState } from 'react';
 import icone_acima_do_menu from "/img/components/header/icone_acima_do_menu.png"
-import logo from "/img/components/header/logo.png"
+import logo from "/img/components/header/logo.svg"
 import logo_menu from "/img/components/menu/Logo.svg"
 import X_menu from "/img/components/menu/X.svg"
 import surf_menu from "/img/components/menu/surf.svg"
@@ -56,24 +56,27 @@ export default function Header() {
 
                         </div>
                     </ul>
-                    <a href="#O_EVENTO"><ul>O evento</ul></a>
-                    <a href="#KEYNOTES"><ul>Keynotes</ul></a>
-                    <ul>Programação</ul>
+                    <ul className="Header_menu_desktop"><a href="#O_EVENTO">O evento</a></ul>
+                    <ul className="Header_menu_desktop"><a href="#KEYNOTES">Keynotes</a></ul>
+                    <ul className="Header_menu_desktop">Programação</ul>
                 </li>
             </div>
-            <div className="Header_logo">
+            <div className="Header_logo Header_menu_desktop_logo">
                 <img src={logo} alt="LOGO" />
             </div>
             <div className="Header_menu_direito">
                 <div className="Header_linguagem">
                     <li>
-                        <ul>BR</ul>
-                        <ul>EN</ul>
-                        <ul>ES</ul>
+                        <ul className="Header_menu_desktop">BR</ul>
+                        <ul className="Header_menu_desktop">EN</ul>
+                        <ul className="Header_menu_desktop">ES</ul>
                     </li>
                 </div>
                 <button>Comprar Ingressos!</button>
             </div>
+        </div>
+        <div className="Header_logo Header_menu_mobile">
+            <img src={logo} alt="LOGO" />
         </div>
     </header>)
 }

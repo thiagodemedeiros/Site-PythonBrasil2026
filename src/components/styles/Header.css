@@ -57,6 +57,7 @@
 .Header_logo {
     & img {
         width: auto;
+        max-width: 208px;
         height: auto;
         margin: 0 20px;
     }
@@ -97,4 +98,79 @@
     font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 20px;
+}
+
+.Header_menu_mobile {
+    display: none;
+}
+
+@media (max-width : 1000px) {
+    .Header_menu_esquerdo {
+        & li {
+            width: auto;
+            max-width: 55px;
+        }
+    }
+
+    .Header_menu_direito {
+        gap: 0;
+        width: auto;
+        max-width: 250px;
+    }
+
+    .Header_linguagem {
+        & li {
+            width: auto;
+        }
+    }
+
+    .Header_menu_desktop {
+        display: none;
+    }
+}
+
+@media (max-width : 650px) {
+    .Header {
+        flex-direction: column;
+        padding: 35px 10px;
+        width: 100%;
+    }
+
+    .Header_logo {
+        & img {
+            width: 90vw;
+            max-width: 600px;
+            height: auto;
+            margin: 0;
+        }
+    }
+
+    .Header_menu_mobile {
+        display: flex;
+    }
+
+    .Header_menu_desktop_logo {
+        display: none;
+    }
+}
+
+@media (max-width : 250px) {
+    .Header_itens {
+        flex-direction: column;
+        gap: 15px;
+        /* border: 2px red solid; */
+    }
+
+    .Header_menu_direito button {
+        padding: 0;
+        width: 140px;
+        height: 60px;
+        border-radius: 60px;
+        background-color: greenyellow;
+        border: none;
+
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+    }    
 }
