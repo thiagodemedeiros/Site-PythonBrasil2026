@@ -64,7 +64,7 @@ export default function Header() {
                 </li>
             </div>
             <div className="Header_logo Header_menu_desktop_logo">
-                <img src={logo} alt="LOGO" />
+                <Link to='/'><img src={logo} alt="LOGO" /></Link>
             </div>
             <div className="Header_menu_direito">
                 <div className="Header_linguagem">

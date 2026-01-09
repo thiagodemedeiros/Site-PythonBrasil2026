@@ -60,6 +60,7 @@
         max-width: 208px;
         height: auto;
         margin: 0 20px;
+        cursor: pointer;
     }
 }
 
