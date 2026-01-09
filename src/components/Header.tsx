@@ -35,7 +35,7 @@ export default function Header() {
                                             <Link to='/'><a href="#HOME" onClick={() => setIsModalOpen(false)}>INÍCIO</a></Link>
                                             <a href="#O_EVENTO" onClick={() => setIsModalOpen(false)}>O EVENTO</a>
                                             <a href="#KEYNOTES" onClick={() => setIsModalOpen(false)}>KEYNOTES</a>
-                                            <a href="">PROGRAMAÇÃO</a>
+                                            <Link to="/programacao" onClick={() => setIsModalOpen(false)}>PROGRAMAÇÃO</Link>
                                             <a href="#GUIA_DA_CIDADE" onClick={() => setIsModalOpen(false)}>GUIA DA CIDADE</a>
                                             <a href="#PATROCINADORES" onClick={() => setIsModalOpen(false)}>PATROCINADORES</a>
                                             <Link to="/perguntas_frequentes" onClick={() => setIsModalOpen(false)}>FAQ</Link>
