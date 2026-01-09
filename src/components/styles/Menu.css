@@ -132,7 +132,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: end;
+        justify-content: center;
 
         position: relative;
         
@@ -141,12 +141,11 @@
     }
 
     .Menu_itens_botoes {
-        margin-bottom: -5px;
         width: 90%;
-        height: 100%;
-        padding-top: 10vh;
+        height: 85%;
+        max-height: 400px;
+        justify-content: space-between;
         /* border: 2px red solid; */
-        max-height: none;
     }
 
     .Menu_itens_botoes_linha1 {
@@ -167,7 +166,12 @@
 
     .Menu_itens_botoes_linha2 {
         font-size: 32px;
-        height: 32%;
+        height: 50%;
+        gap: 1px;
+
+        & a {
+            font-size: 16px;
+        }
     }
 
     .Menu_itens_botoes_linha3 {
@@ -177,27 +181,27 @@
         align-items: center;
         justify-content: space-between;
         
-        height: 65px;
+        height: 25%;
         width: 100%;
         z-index: 20;
-        gap: 20px;
+        gap: 5px;
     
         & button {
             font-family: "Inter", sans-serif;
-            font-size: 20px;
+            font-size: 16px;
             padding: 0px;
             width: 90vw;
-            height: 60px;
+            height: 40px;
             border-radius: 60px;
             background-color: greenyellow;
             border: black 1px solid;
         }
     }
 
-    .Menu_itens_surfista_menu_mobile {
-        display: flex;
-        width: 100vw;
-        margin-top: 40px;
-        max-height: 380px;
-    }
+    /* .Menu_itens_surfista_menu_mobile { */
+        /* display: flex; */
+        /* width: 100vw; */
+        /* margin-top: 40px; */
+        /* max-height: 100px; */
+    /* } */
 }
