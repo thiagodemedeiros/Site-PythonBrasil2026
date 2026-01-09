@@ -12,7 +12,7 @@ import Carrossel from "../../../components/Carrossel"
 
 export default function Home_Section3() {
     return(<>
-    <section className="Home_Section3">
+    <section className="Home_Section3" id="KEYNOTES">
         <div className="Home_Section3_carrossel_keynotes">
             <h4>Keynotes</h4>
             <div className="Home_Sectine3_carrossel_card_keynote">

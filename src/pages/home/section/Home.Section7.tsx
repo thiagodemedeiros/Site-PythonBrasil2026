@@ -24,7 +24,7 @@ import oracle from '/img/page/home/section7/apoiador/oracle.png'
 
 export default function Home_Section6() {
     return(<>
-    <section className="Home_Section7">
+    <section className="Home_Section7" id="PATROCINADORES">
         <img src={cobra_topo} alt="" className="Home_Section7_cobra_topo"/>
         <div className="Home_Section7_grupo_de_patrocinadores">
             <h4>Patrocinadores</h4>

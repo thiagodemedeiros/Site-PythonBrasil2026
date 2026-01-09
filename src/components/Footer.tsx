@@ -2,7 +2,7 @@ import "./styles/Footer.css"
 import logo from "/img/components/footer/logo.png"
 
 export default function Footer() {
-    return (<footer className="Footer">
+    return (<footer className="Footer" id="CONTATO_footer">
             <div className="Footer_barra_verde"></div>
         <div className="Footer_logo">
             <img src={logo} alt="LOGO" />

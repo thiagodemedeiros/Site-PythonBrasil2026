@@ -31,14 +31,14 @@ export default function Header() {
                                             </div>
                                         </div>
                                         <div className="Menu_itens_botoes_linha2">
-                                            <a href="">INÍCIO</a>
+                                            <a href="#HOME" onClick={() => setIsModalOpen(false)}>INÍCIO</a>
                                             <a href="#O_EVENTO" onClick={() => setIsModalOpen(false)}>O EVENTO</a>
-                                            <a href="">KEYNOTES</a>
-                                            <a href="">ROGRAMAÇÃO</a>
-                                            <a href="">GUIA DA CIDADE</a>
-                                            <a href="">PATROCINADORES</a>
+                                            <a href="#KEYNOTES" onClick={() => setIsModalOpen(false)}>KEYNOTES</a>
+                                            <a href="">PROGRAMAÇÃO</a>
+                                            <a href="#GUIA_DA_CIDADE" onClick={() => setIsModalOpen(false)}>GUIA DA CIDADE</a>
+                                            <a href="#PATROCINADORES" onClick={() => setIsModalOpen(false)}>PATROCINADORES</a>
                                             <a href="">FAQ</a>
-                                            <a href="">CONTATO</a>
+                                            <a href="#CONTATO_footer" onClick={() => setIsModalOpen(false)}>CONTATO</a>
                                         </div>
                                         <div className="Menu_itens_botoes_linha3">
                                             <a href="">
