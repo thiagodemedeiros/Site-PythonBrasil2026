@@ -1,6 +1,7 @@
 import "./styles/Header.css"
 import "./styles/Menu.css"
 import { useState } from 'react';
+import { Link } from "react-router-dom"
 import icone_acima_do_menu from "/img/components/header/icone_acima_do_menu.png"
 import logo from "/img/components/header/logo.svg"
 import logo_menu from "/img/components/menu/Logo.svg"
@@ -31,13 +32,13 @@ export default function Header() {
                                             </div>
                                         </div>
                                         <div className="Menu_itens_botoes_linha2">
-                                            <a href="#HOME" onClick={() => setIsModalOpen(false)}>INÍCIO</a>
+                                            <Link to='/'><a href="#HOME" onClick={() => setIsModalOpen(false)}>INÍCIO</a></Link>
                                             <a href="#O_EVENTO" onClick={() => setIsModalOpen(false)}>O EVENTO</a>
                                             <a href="#KEYNOTES" onClick={() => setIsModalOpen(false)}>KEYNOTES</a>
                                             <a href="">PROGRAMAÇÃO</a>
                                             <a href="#GUIA_DA_CIDADE" onClick={() => setIsModalOpen(false)}>GUIA DA CIDADE</a>
                                             <a href="#PATROCINADORES" onClick={() => setIsModalOpen(false)}>PATROCINADORES</a>
-                                            <a href="">FAQ</a>
+                                            <Link to="/perguntas_frequentes" onClick={() => setIsModalOpen(false)}>FAQ</Link>
                                             <a href="#CONTATO_footer" onClick={() => setIsModalOpen(false)}>CONTATO</a>
                                         </div>
                                         <div className="Menu_itens_botoes_linha3">
