@@ -1,8 +1,8 @@
 @echo off
-echo ============================
-echo REMOVENDO BRANCH GH-PAGES
-echo ============================
-git push origin --delete gh-pages
+@REM echo ============================
+@REM echo REMOVENDO BRANCH GH-PAGES
+@REM echo ============================
+@REM git push origin --delete gh-pages
 
 echo.
 echo ============================
