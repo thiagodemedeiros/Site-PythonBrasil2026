@@ -103,8 +103,9 @@
     gap: 5px;
     align-items: start;
     justify-content: center;
-    width: 35%;
-    max-width: 340px;
+    min-width: 400px;
+    width: 28%;
+    max-width: 400px;
     padding: 20px;
 
     background-color: #b7ff06;
@@ -135,4 +136,21 @@
     height: 7px;
     align-self: baseline;
     background-color: #b7ff06;
+}
+
+@media (max-width : 520px) {
+    .Home_Section6_localizacao_cards_Palestras {
+        min-width: 180px;
+        width: 100%;
+        max-width: 380px;
+        padding: 30px 25px;
+    }
+
+    .Home_Section6_localizacao_cards_Tutoriais,
+    .Home_Section6_localizacao_cards_Sprints {
+        min-width: 180px;
+        width: 100%;
+        max-width: 380px;
+        padding: 20px;
+    }   
 }
