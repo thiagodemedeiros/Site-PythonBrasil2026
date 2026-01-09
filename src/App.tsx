@@ -5,8 +5,8 @@ import './App.css'
 
 function App() {
   return (<>
-    <Header/>
-    <Home/>
+    {/* <Header/> */}
+    {/* <Home/> */}
     <Footer/>
   </>)
 }
