@@ -11,3 +11,23 @@
         margin: 30px 0px 60px 0px;
     }
 }
+
+.hero_mobile {
+    display: none;
+}
+
+@media (max-width : 1000px) {
+    .hero_desktop {
+        display: none;
+    }
+    .hero_mobile {
+        display: flex;
+    }
+
+    .Home_Section1{
+        & img {
+            width: 90vw;
+            margin: 0px 0px 50px 0px;
+        }
+    }
+}
