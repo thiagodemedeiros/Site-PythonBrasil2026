@@ -8,12 +8,12 @@ import Home_Section7 from "./section/Home.Section7"
 
 export default function Home() {
     return(<>
-        <Home_Section1/>
+        {/* <Home_Section1/> */}
         <Home_Section2/>
-        <Home_Section3/>
-        <Home_Section4/>
-        <Home_Section5/>
-        <Home_Section6/>
-        <Home_Section7/>
+        {/* <Home_Section3/> */}
+        {/* <Home_Section4/> */}
+        {/* <Home_Section5/> */}
+        {/* <Home_Section6/> */}
+        {/* <Home_Section7/> */}
     </>)
 }
