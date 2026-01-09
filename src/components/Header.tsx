@@ -32,7 +32,7 @@ export default function Header() {
                                         </div>
                                         <div className="Menu_itens_botoes_linha2">
                                             <a href="">INÍCIO</a>
-                                            <a href="">O EVENTO</a>
+                                            <a href="#O_EVENTO" onClick={() => setIsModalOpen(false)}>O EVENTO</a>
                                             <a href="">KEYNOTES</a>
                                             <a href="">ROGRAMAÇÃO</a>
                                             <a href="">GUIA DA CIDADE</a>

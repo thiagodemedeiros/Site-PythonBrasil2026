@@ -5,7 +5,7 @@ import cobra_direita_section2 from "/cobra_direita_section2.png"
 
 
 export default function Home_Section2() {
-    return(<section className="Home_Section2">
+    return(<section className="Home_Section2" id="O_EVENTO">
         <div className="Home_Section2_parte_esquerda">
             <img src={foto} alt="" />
         </div>
