@@ -56,8 +56,8 @@ export default function Header() {
 
                         </div>
                     </ul>
-                    <ul>O evento</ul>
-                    <ul>Keynotes</ul>
+                    <a href="#O_EVENTO"><ul>O evento</ul></a>
+                    <a href="#KEYNOTES"><ul>Keynotes</ul></a>
                     <ul>Programação</ul>
                 </li>
             </div>
