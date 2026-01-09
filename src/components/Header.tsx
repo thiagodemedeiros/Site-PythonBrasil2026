@@ -48,8 +48,9 @@ export default function Header() {
                                                 <button>Plano de Patrocínio</button>
                                             </a>
                                         </div>
+                                        <img src={surf_menu} alt="" className="Menu_itens_surfista_menu_mobile"/>
                                     </div>
-                                    <img src={surf_menu} alt="" className="Menu_itens_surfista"/>
+                                    <img src={surf_menu} alt="" className="Menu_itens_surfista menu_desktop"/>
                                 </div>
                             </div>
 
