@@ -34,7 +34,7 @@ export default function Home_Section6() {
                     <img src={bandeira_ouro} alt="" />
                 </div>
                 <h5>Ouro</h5>
-                <div className="Home_Section7_patrocinadores_logos">
+                <div className="Home_Section7_patrocinadores_logos patrocinadores_ouro">
                     <img src={elastic} alt="" />
                     <img src={nicbr} alt="" />
                 </div>
@@ -94,7 +94,7 @@ export default function Home_Section6() {
                 </div>
             </div>
 
-            <div className="Home_Section7_patrocinadores_bandeira_linha"></div>
+            <div className="Home_Section7_patrocinadores_bandeira_linha ultima_linha"></div>
             
         </div>
         <img src={cobra_baixo} alt="" className="Home_Section7_cobra_baixo"/>
