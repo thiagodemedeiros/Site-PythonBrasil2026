@@ -143,7 +143,7 @@
     .Menu_itens_botoes {
         width: 90%;
         height: 85%;
-        max-height: 400px;
+        max-height: 500px;
         justify-content: space-between;
         /* border: 2px red solid; */
     }
@@ -167,6 +167,7 @@
     .Menu_itens_botoes_linha2 {
         font-size: 32px;
         height: 50%;
+        max-height: 220px;
         gap: 1px;
 
         & a {
@@ -182,6 +183,7 @@
         justify-content: space-between;
         
         height: 25%;
+        max-height: 100px;
         width: 100%;
         z-index: 20;
         gap: 5px;
