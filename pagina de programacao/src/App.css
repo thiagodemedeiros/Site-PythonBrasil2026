@@ -8,6 +8,34 @@
   width: 1100px;
 }
 
+.painel_filtro_de_palestras {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: start;
+  width: 30%;
+}
+
+.painel_filtro_de_palestras_opcao {
+  padding: 5px 12px;
+  border-radius: 30px;
+  border: 1px black solid;
+  color: black;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+.painel_filtro_de_palestras_opcao.selecionado {
+  cursor: pointer;
+  padding: 5px 12px;
+  border-radius: 30px;
+  border: 1px black solid;
+  background-color: black;
+  color: aliceblue;
+  font-family: "Inter", sans-serif;
+}
+
 .painel_de_datas {
   display: flex;
   flex-direction: row;

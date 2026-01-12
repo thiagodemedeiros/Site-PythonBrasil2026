@@ -52,7 +52,7 @@ const datas = [
               'es' : 'Em espanhol'
           },
          'atividade' : {
-              'br' : 'Tutorial',
+              'br' : 'Debate',
               'en' : 'Em ingles',
               'es' : 'Em espanhol'
          },
@@ -84,7 +84,7 @@ const datas = [
               'es' : 'Em espanhol'
           },
          'atividade' : {
-              'br' : 'Tutorial',
+              'br' : 'Palestra',
               'en' : 'Em ingles',
               'es' : 'Em espanhol'
          },
@@ -349,8 +349,34 @@ const datas = [
 
 export default function App() {
   const [indexAtivo, setIndex] = useState(0);
+  const [indexAtivoFiltroPalestras, setIndexAtivoFiltroPalestras] = useState("Todos");
+
+  const palestrasFiltradas = datas[indexAtivo]['info'].filter((palestra) => {
+    if (indexAtivoFiltroPalestras === "Todos") return true;
+    return palestra.atividade.br === indexAtivoFiltroPalestras;
+  });
 
   return (<div className='datas'>
+
+      <div className='painel_filtro_de_palestras'>
+        <h6 onClick={() => setIndexAtivoFiltroPalestras("Todos")}
+            className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Todos" ? "selecionado" : ""}`}>
+          Todos
+        </h6>
+        <h6 onClick={() => setIndexAtivoFiltroPalestras("Palestra")}
+            className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Palestra" ? "selecionado" : ""}`}>
+          Palestras
+        </h6>
+        <h6 onClick={() => setIndexAtivoFiltroPalestras("Tutorial")}
+            className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Tutorial" ? "selecionado" : ""}`}>
+          Tutoriais
+        </h6>
+        <h6 onClick={() => setIndexAtivoFiltroPalestras("Debate")}
+            className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Debate" ? "selecionado" : ""}`}>
+          Debates
+        </h6>
+      </div>
+
       <div className='painel_de_datas'>
         {datas.map((data, index) => (
           <div  className={`datas_palestras ${index === indexAtivo ? "ativo" : ""}`}
@@ -360,43 +386,42 @@ export default function App() {
         ))}
       </div>
 
-        <div className='todas_palestras'>
-          {datas[indexAtivo]['info'].map((data, index) => (
-            <div className='card_palestra' key={index}>
-              <div className='card_palestra_infos_1'>
-                <h6 className='card_palestra_infos_1_horario'>{data['horario']}</h6>
-                <h6 className='card_palestra_infos_1_duracao'>{data['duracao']}</h6>
-                <h6 className='card_palestra_infos_1_nivel'>{data['nivel']['br']}</h6>
-                <h6 className='card_palestra_infos_1_atividade'>{data['atividade']['br']}</h6>
-              </div>
-              <div className='card_palestra_infos_2'>
-                <h3>{data['titulo']['br']}</h3>
-                <h3>{data['descricao']['br']}</h3>
-              </div>
-
-              <div className='card_palestra_infos_3'>
-                {data.palestrante.length > 1 ? (
+      <div className='todas_palestras'>
+        {palestrasFiltradas.map((data, index) => (
+          <div className='card_palestra' key={index}>
+            <div className='card_palestra_infos_1'>
+              <h6 className='card_palestra_infos_1_horario'>{data['horario']}</h6>
+              <h6 className='card_palestra_infos_1_duracao'>{data['duracao']}</h6>
+              <h6 className='card_palestra_infos_1_nivel'>{data['nivel']['br']}</h6>
+              <h6 className='card_palestra_infos_1_atividade'>{data['atividade']['br']}</h6>
+            </div>
+            <div className='card_palestra_infos_2'>
+              <h3>{data['titulo']['br']}</h3>
+              <h3>{data['descricao']['br']}</h3>
+            </div>
+            <div className='card_palestra_infos_3'>
+              {data.palestrante.length > 1 ? (
+                <>
+                <div className='card_palestra_infos_3_fotos'>
+                {data.palestrante.map ((data_palestrante, index_foto) => (
+                  <img key={index_foto} src={data_palestrante['foto']} alt="" />
+                ))}
+                </div>
+                <div className='card_palestra_infos_3_nomes'>
+                {data.palestrante.map ((data_palestrante, index_nome) => (
+                    <h3 key={index_nome}>{data_palestrante['nome']}</h3>
+                ))}
+                </div>
+                </>
+                ) : (
                   <>
-                  <div className='card_palestra_infos_3_fotos'>
-                  {data.palestrante.map ((data_palestrante, index_foto) => (
-                    <img key={index_foto} src={data_palestrante['foto']} alt="" />
-                  ))}
-                  </div>
-                  <div className='card_palestra_infos_3_nomes'>
-                  {data.palestrante.map ((data_palestrante, index_nome) => (
-                      <h3 key={index_nome}>{data_palestrante['nome']}</h3>
-                  ))}
-                  </div>
+                    <img key={index} src={data.palestrante[0].foto} alt="" />
+                    <h3 key={index}>{data.palestrante[0].nome}</h3>
                   </>
-                  ) : (
-                    <>
-                      <img key={index} src={data.palestrante[0].foto} alt="" />
-                      <h3 key={index}>{data.palestrante[0].nome}</h3>
-                    </>
-                  )}
-              </div>
-            </div>    
-          ))}          
-        </div>
+                )}
+            </div>
+          </div>    
+        ))}          
+      </div>
   </div>)
 }
