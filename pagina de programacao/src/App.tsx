@@ -10,10 +10,27 @@ const datas = [
          'id' : 1,
          'horario' : '7:00',
          'duracao' : '3:00',
-         'nivel' : 'Iniciante',
-         'atividade' : 'Tutorial',
-         'titulo' : 'Python para Finanças: Primeiros Passos',
-         'descricao' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
+         'nivel' : {
+              'br' : 'Iniciante',
+              'en' : 'Em ingles',
+              'es' : 'Em espanhol'
+          },
+         'atividade' : {
+              'br' : 'Tutorial',
+              'en' : 'Em ingles',
+              'es' : 'Em espanhol'
+         },
+         'titulo' : {
+              'br' : 'Python para Finanças: Primeiros Passos',
+              'en' : 'Em ingles',
+              'es' : 'Em espanhol'
+          }
+          ,
+         'descricao' : {
+              'br' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
+              'en' : 'Em ingles',
+              'es' : 'Em espanhol',
+          },
          'palestrante' : [
            {
              'nome' : 'Ana Silva',
@@ -29,15 +46,28 @@ const datas = [
          'id' : 2,
          'horario' : '7:00',
          'duracao' : '3:00',
-         'nivel' : 'Iniciante',
-         'atividade' : 'Tutorial',
-         'titulo' : 'Python para Finanças: Primeiros Passos',
-         'descricao' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
+         'nivel' : {
+              'br' : 'Iniciante',
+              'en' : 'Em ingles',
+              'es' : 'Em espanhol'
+          },
+         'atividade' : {
+              'br' : 'Tutorial',
+              'en' : 'Em ingles',
+              'es' : 'Em espanhol'
+         },
+         'titulo' : {
+              'br' : 'Python para Finanças: Primeiros Passos',
+              'en' : 'Em ingles',
+              'es' : 'Em espanhol'
+          }
+          ,
+         'descricao' : {
+              'br' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
+              'en' : 'Em ingles',
+              'es' : 'Em espanhol',
+          },
          'palestrante' : [
-           {
-             'nome' : 'Ana Silva',
-             'foto' : dot1
-           },
            {
              'nome' : 'Carlos Mendes',
              'foto' : dot2
@@ -48,10 +78,27 @@ const datas = [
          'id' : 3,
          'horario' : '7:00',
          'duracao' : '3:00',
-         'nivel' : 'Iniciante',
-         'atividade' : 'Tutorial',
-         'titulo' : 'Python para Finanças: Primeiros Passos',
-         'descricao' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
+         'nivel' : {
+              'br' : 'Iniciante',
+              'en' : 'Em ingles',
+              'es' : 'Em espanhol'
+          },
+         'atividade' : {
+              'br' : 'Tutorial',
+              'en' : 'Em ingles',
+              'es' : 'Em espanhol'
+         },
+         'titulo' : {
+              'br' : 'Python para Finanças: Primeiros Passos',
+              'en' : 'Em ingles',
+              'es' : 'Em espanhol'
+          }
+          ,
+         'descricao' : {
+              'br' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
+              'en' : 'Em ingles',
+              'es' : 'Em espanhol',
+          },
          'palestrante' : [
            {
              'nome' : 'Ana Silva',
@@ -67,21 +114,34 @@ const datas = [
          'id' : 4,
          'horario' : '7:00',
          'duracao' : '3:00',
-         'nivel' : 'Iniciante',
-         'atividade' : 'Tutorial',
-         'titulo' : 'Python para Finanças: Primeiros Passos',
-         'descricao' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
+         'nivel' : {
+              'br' : 'Iniciante',
+              'en' : 'Em ingles',
+              'es' : 'Em espanhol'
+          },
+         'atividade' : {
+              'br' : 'Tutorial',
+              'en' : 'Em ingles',
+              'es' : 'Em espanhol'
+         },
+         'titulo' : {
+              'br' : 'Python para Finanças: Primeiros Passos',
+              'en' : 'Em ingles',
+              'es' : 'Em espanhol'
+          }
+          ,
+         'descricao' : {
+              'br' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
+              'en' : 'Em ingles',
+              'es' : 'Em espanhol',
+          },
          'palestrante' : [
            {
              'nome' : 'Ana Silva',
              'foto' : dot1
            },
-           {
-             'nome' : 'Carlos Mendes',
-             'foto' : dot2
-           },
          ]
-      }
+      },
     ]
   },
   {'data' : 'Qui, 15',
@@ -91,20 +151,37 @@ const datas = [
       'id' : 4,
       'horario' : 'n/a',
       'duracao' : 'n/a',
-      'nivel' : 'n/a',
-      'atividade' : 'n/a',
-      'titulo' : 'Sem nada selecionado para o dia 15',
-      'descricao' : 'n/a',
-         'palestrante' : [
-           {
-             'nome' : 'n/a',
-             'foto' : "n/a"
-           },
-           {
-             'nome' : 'n/a',
-             'foto' : 'n/a'
-           },
-         ]
+      'nivel' : {
+              'br' : 'Iniciante',
+              'en' : 'Em ingles',
+              'es' : 'Em espanhol'
+          },
+         'atividade' : {
+              'br' : 'Tutorial',
+              'en' : 'Em ingles',
+              'es' : 'Em espanhol'
+         },
+      'titulo' : {
+              'br' : 'Python para Finanças: Primeiros Passos',
+              'en' : 'Em ingles',
+              'es' : 'Em espanhol'
+          }
+          ,
+      'descricao' : {
+          'br' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
+          'en' : 'Em ingles',
+          'es' : 'Em espanhol',
+        },
+      'palestrante' : [
+        {
+          'nome' : 'n/a',
+          'foto' : "n/a"
+        },
+        {
+          'nome' : 'n/a',
+          'foto' : 'n/a'
+        },
+      ]
     }
    ]
   },
@@ -115,20 +192,36 @@ const datas = [
       'id' : 4,
       'horario' : 'n/a',
       'duracao' : 'n/a',
-      'nivel' : 'n/a',
-      'atividade' : 'n/a',
-      'titulo' : 'Sem nada selecionado para o dia 16',
-      'descricao' : 'n/a',
-         'palestrante' : [
-           {
-             'nome' : 'n/a',
-             'foto' : "n/a"
-           },
-           {
-             'nome' : 'n/a',
-             'foto' : 'n/a'
-           },
-         ]
+      'nivel' : {
+           'br' : 'Iniciante',
+           'en' : 'Em ingles',
+           'es' : 'Em espanhol'
+      },
+      'atividade' : {
+           'br' : 'Tutorial',
+           'en' : 'Em ingles',
+           'es' : 'Em espanhol'
+      },
+      'titulo' : {
+           'br' : 'Python para Finanças: Primeiros Passos',
+           'en' : 'Em ingles',
+           'es' : 'Em espanhol'
+       },
+      'descricao' : {
+           'br' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
+           'en' : 'Em ingles',
+           'es' : 'Em espanhol',
+       },
+      'palestrante' : [
+        {
+          'nome' : 'n/a',
+          'foto' : "n/a"
+        },
+        {
+          'nome' : 'n/a',
+          'foto' : 'n/a'
+        },
+      ]
     }
    ]
   },
@@ -139,20 +232,36 @@ const datas = [
       'id' : 4,
       'horario' : 'n/a',
       'duracao' : 'n/a',
-      'nivel' : 'n/a',
-      'atividade' : 'n/a',
-      'titulo' : 'Sem nada selecionado para o dia 17',
-      'descricao' : 'n/a',
-         'palestrante' : [
-           {
-             'nome' : 'n/a',
-             'foto' : "n/a"
-           },
-           {
-             'nome' : 'n/a',
-             'foto' : 'n/a'
-           },
-         ]
+      'nivel' : {
+           'br' : 'Iniciante',
+           'en' : 'Em ingles',
+           'es' : 'Em espanhol'
+       },
+      'atividade' : {
+           'br' : 'Tutorial',
+           'en' : 'Em ingles',
+           'es' : 'Em espanhol'
+      },
+      'titulo' : {
+           'br' : 'Python para Finanças: Primeiros Passos',
+           'en' : 'Em ingles',
+           'es' : 'Em espanhol'
+       },
+      'descricao' : {
+           'br' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
+           'en' : 'Em ingles',
+           'es' : 'Em espanhol',
+       },
+      'palestrante' : [
+        {
+          'nome' : 'n/a',
+          'foto' : "n/a"
+        },
+        {
+          'nome' : 'n/a',
+          'foto' : 'n/a'
+        },
+      ]
     }
    ]
   },
@@ -163,20 +272,36 @@ const datas = [
       'id' : 4,
       'horario' : 'n/a',
       'duracao' : 'n/a',
-      'nivel' : 'n/a',
-      'atividade' : 'n/a',
-      'titulo' : 'Sem nada selecionado para o dia 18',
-      'descricao' : 'n/a',
-         'palestrante' : [
-           {
-             'nome' : 'n/a',
-             'foto' : "n/a"
-           },
-           {
-             'nome' : 'n/a',
-             'foto' : 'n/a'
-           },
-         ]
+      'nivel' : {
+           'br' : 'Iniciante',
+           'en' : 'Em ingles',
+           'es' : 'Em espanhol'
+       },
+      'atividade' : {
+           'br' : 'Tutorial',
+           'en' : 'Em ingles',
+           'es' : 'Em espanhol'
+      },
+      'titulo' : {
+           'br' : 'Python para Finanças: Primeiros Passos',
+           'en' : 'Em ingles',
+           'es' : 'Em espanhol'
+       },
+      'descricao' : {
+           'br' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
+           'en' : 'Em ingles',
+           'es' : 'Em espanhol',
+       },
+      'palestrante' : [
+        {
+          'nome' : 'n/a',
+          'foto' : "n/a"
+        },
+        {
+          'nome' : 'n/a',
+          'foto' : 'n/a'
+        },
+      ]
     }
    ]
   },
@@ -187,20 +312,36 @@ const datas = [
       'id' : 4,
       'horario' : 'n/a',
       'duracao' : 'n/a',
-      'nivel' : 'n/a',
-      'atividade' : 'n/a',
-      'titulo' : 'Sem nada selecionado para o dia 19',
-      'descricao' : 'n/a',
-         'palestrante' : [
-           {
-             'nome' : 'n/a',
-             'foto' : "n/a"
-           },
-           {
-             'nome' : 'n/a',
-             'foto' : 'n/a'
-           },
-         ]
+      'nivel' : {
+           'br' : 'Iniciante',
+           'en' : 'Em ingles',
+           'es' : 'Em espanhol'
+       },
+      'atividade' : {
+           'br' : 'Tutorial',
+           'en' : 'Em ingles',
+           'es' : 'Em espanhol'
+      },
+      'titulo' : {
+           'br' : 'Python para Finanças: Primeiros Passos',
+           'en' : 'Em ingles',
+           'es' : 'Em espanhol'
+       },
+      'descricao' : {
+           'br' : 'Introdução prática ao uso de Python para analisar dados financeiros básicos, criar gráficos e calcular indicadores com Pandas.',
+           'en' : 'Em ingles',
+           'es' : 'Em espanhol',
+       },
+      'palestrante' : [
+        {
+          'nome' : 'n/a',
+          'foto' : "n/a"
+        },
+        {
+          'nome' : 'n/a',
+          'foto' : 'n/a'
+        },
+      ]
     }
    ]
   },
@@ -224,16 +365,33 @@ export default function App() {
               <div className='card_palestra_infos_1'>
                 <h6>{data['horario']}</h6>
                 <h6>{data['duracao']}</h6>
-                <h6>{data['nivel']}</h6>
-                <h6>{data['atividade']}</h6>
+                <h6>{data['nivel']['br']}</h6>
+                <h6>{data['atividade']['br']}</h6>
               </div>
               <div className='card_palestra_infos_2'>
-                <h3>{data['titulo']}</h3>
-                <h3>{data['descricao']}</h3>
+                <h3>{data['titulo']['br']}</h3>
+                <h3>{data['descricao']['br']}</h3>
               </div>
-              <div className='card_palestra_infos_3'></div>
-            </div>
-          ))}
+
+              <div className='card_palestra_infos_3'>
+                {data.palestrante.length > 1 ? (
+                  <>
+                  {data.palestrante.map ((data_palestrante, index_foto) => (
+                      <img key={index_foto} src={data_palestrante['foto']} alt="" />
+                  ))}
+                  {data.palestrante.map ((data_palestrante, index_nome) => (
+                      <h3 key={index_nome}>{data_palestrante['nome']}</h3>
+                  ))}
+                  </>
+                  ) : (
+                    <>
+                      <h3 key={index}>{data.palestrante[0].nome}</h3>
+                      <img key={index} src={data.palestrante[0].foto} alt="" />
+                    </>
+                  )}
+              </div>
+            </div>    
+          ))}          
         </div>
   </div>)
 }
