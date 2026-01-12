@@ -162,7 +162,7 @@ const datas = [
               'es' : 'Em espanhol'
          },
       'titulo' : {
-              'br' : 'Python para Finanças: Primeiros Passos',
+              'br' : 'Python para Finanças: Primeiros Passos dia15',
               'en' : 'Em ingles',
               'es' : 'Em espanhol'
           }
@@ -203,7 +203,7 @@ const datas = [
            'es' : 'Em espanhol'
       },
       'titulo' : {
-           'br' : 'Python para Finanças: Primeiros Passos',
+           'br' : 'Python para Finanças: Primeiros Passos dia16',
            'en' : 'Em ingles',
            'es' : 'Em espanhol'
        },
@@ -243,7 +243,7 @@ const datas = [
            'es' : 'Em espanhol'
       },
       'titulo' : {
-           'br' : 'Python para Finanças: Primeiros Passos',
+           'br' : 'Python para Finanças: Primeiros Passos dia17',
            'en' : 'Em ingles',
            'es' : 'Em espanhol'
        },
@@ -283,7 +283,7 @@ const datas = [
            'es' : 'Em espanhol'
       },
       'titulo' : {
-           'br' : 'Python para Finanças: Primeiros Passos',
+           'br' : 'Python para Finanças: Primeiros Passos dia18',
            'en' : 'Em ingles',
            'es' : 'Em espanhol'
        },
@@ -323,7 +323,7 @@ const datas = [
            'es' : 'Em espanhol'
       },
       'titulo' : {
-           'br' : 'Python para Finanças: Primeiros Passos',
+           'br' : 'Python para Finanças: Primeiros Passos dia19',
            'en' : 'Em ingles',
            'es' : 'Em espanhol'
        },
@@ -351,7 +351,7 @@ export default function App() {
   const [index, setIndex] = useState(0);
 
   return (<div className='datas'>
-      <div className='paine_de_datas'>
+      <div className='painel_de_datas'>
         {datas.map((data, index) => (
           <div className="datas_palestras" key={index} onClick={() => setIndex(index)}>
             <h2>{data.data}</h2>
@@ -359,7 +359,7 @@ export default function App() {
         ))}
       </div>
 
-        <div>
+        <div className='todas_palestras'>
           {datas[index]['info'].map((data, index) => (
             <div className='card_palestra' key={index}>
               <div className='card_palestra_infos_1'>
@@ -376,17 +376,21 @@ export default function App() {
               <div className='card_palestra_infos_3'>
                 {data.palestrante.length > 1 ? (
                   <>
+                  <div className='card_palestra_infos_3_fotos'>
                   {data.palestrante.map ((data_palestrante, index_foto) => (
-                      <img key={index_foto} src={data_palestrante['foto']} alt="" />
+                    <img key={index_foto} src={data_palestrante['foto']} alt="" />
                   ))}
+                  </div>
+                  <div className='card_palestra_infos_3_nomes'>
                   {data.palestrante.map ((data_palestrante, index_nome) => (
                       <h3 key={index_nome}>{data_palestrante['nome']}</h3>
                   ))}
+                  </div>
                   </>
                   ) : (
                     <>
-                      <h3 key={index}>{data.palestrante[0].nome}</h3>
                       <img key={index} src={data.palestrante[0].foto} alt="" />
+                      <h3 key={index}>{data.palestrante[0].nome}</h3>
                     </>
                   )}
               </div>
