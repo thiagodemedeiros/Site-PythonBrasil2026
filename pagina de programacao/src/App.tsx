@@ -348,25 +348,26 @@ const datas = [
 ]
 
 export default function App() {
-  const [index, setIndex] = useState(0);
+  const [indexAtivo, setIndex] = useState(0);
 
   return (<div className='datas'>
       <div className='painel_de_datas'>
         {datas.map((data, index) => (
-          <div className="datas_palestras" key={index} onClick={() => setIndex(index)}>
+          <div  className={`datas_palestras ${index === indexAtivo ? "ativo" : ""}`}
+                key={index} onClick={() => setIndex(index)}>
             <h2>{data.data}</h2>
           </div>
         ))}
       </div>
 
         <div className='todas_palestras'>
-          {datas[index]['info'].map((data, index) => (
+          {datas[indexAtivo]['info'].map((data, index) => (
             <div className='card_palestra' key={index}>
               <div className='card_palestra_infos_1'>
-                <h6>{data['horario']}</h6>
-                <h6>{data['duracao']}</h6>
-                <h6>{data['nivel']['br']}</h6>
-                <h6>{data['atividade']['br']}</h6>
+                <h6 className='card_palestra_infos_1_horario'>{data['horario']}</h6>
+                <h6 className='card_palestra_infos_1_duracao'>{data['duracao']}</h6>
+                <h6 className='card_palestra_infos_1_nivel'>{data['nivel']['br']}</h6>
+                <h6 className='card_palestra_infos_1_atividade'>{data['atividade']['br']}</h6>
               </div>
               <div className='card_palestra_infos_2'>
                 <h3>{data['titulo']['br']}</h3>
