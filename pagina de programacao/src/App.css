@@ -5,16 +5,29 @@
   justify-content: center;
 
   gap: 30px;
-  width: 1100px;
+  width: 80vw;
+  max-width: 1100px;
 }
 
 .painel_filtro_de_palestras {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+  font-family: "Inter", sans-serif;
+  align-self: start;
+  width: auto;
+  /* border: 2px red solid; */
+}
+
+.painel_filtro_de_palestras_todas_opcoes {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   align-self: start;
-  width: 30%;
+  width: 350px;
 }
 
 .painel_filtro_de_palestras_opcao {
@@ -31,8 +44,8 @@
   padding: 5px 12px;
   border-radius: 30px;
   border: 1px black solid;
-  background-color: black;
-  color: aliceblue;
+  background-color: #B7FF06;
+  color: black;
   font-family: "Inter", sans-serif;
 }
 
@@ -42,6 +55,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  max-width: 1100px;
 }
 
 .datas_palestras {
@@ -52,7 +66,7 @@
   cursor: pointer;
   
   border: 2px rgb(0, 0, 0) solid;
-  padding: 20px 30px;
+  padding: 25px 10px;
   width: 100%;
   font-family: "Cascadia Mono", sans-serif;
 }
@@ -82,7 +96,7 @@
   gap: 20px;
 
   width: 100%;
-  border: red 2px solid;
+  background-color: #B7FF06;
 }
 
 .card_palestra_infos_1 {
@@ -103,6 +117,7 @@
   color: aliceblue;
   color: black;
   font-family: "Inter", sans-serif;
+  font-size: 12px;
 }
 .card_palestra_infos_1_atividade {
   padding: 5px 12px;
@@ -110,6 +125,7 @@
   background-color: black;
   color: aliceblue;
   font-family: "Inter", sans-serif;
+  font-size: 12px;
 }
 
 .card_palestra_infos_2 {
@@ -117,9 +133,19 @@
   flex-direction: column;
   align-items: start;
   justify-content: center;
+  gap: 5px;  
+}
 
-  gap: 5px;
+.card_palestra_infos_2_descricao {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.card_palestra_infos_2_titulo {
   font-family: "Cascadia Mono", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 .card_palestra_infos_3 {
@@ -151,4 +177,63 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+@media (max-width : 800px) {
+  .datas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 80vw;
+    max-width: 1100px;
+  }
+
+  .painel_de_datas {
+    flex-direction: column;
+  }
+  .card_palestra_infos_1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .painel_filtro_de_palestras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .painel_filtro_de_palestras_todas_opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+  }
+}
+
+@media (max-width : 600px) {
+  .card_palestra_infos_1 {
+    justify-content: center;
+  }
+}
+
+@media (max-width : 300px) {
+  .card_palestra_infos_3 {
+    flex-direction: column;
+  }
+
+  .card_palestra_infos_3_nomes {
+    flex-direction: column;
+    gap: 2px;
+    text-align: center;
+  }
 }

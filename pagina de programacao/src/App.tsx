@@ -359,22 +359,25 @@ export default function App() {
   return (<div className='datas'>
 
       <div className='painel_filtro_de_palestras'>
-        <h6 onClick={() => setIndexAtivoFiltroPalestras("Todos")}
-            className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Todos" ? "selecionado" : ""}`}>
-          Todos
-        </h6>
-        <h6 onClick={() => setIndexAtivoFiltroPalestras("Palestra")}
-            className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Palestra" ? "selecionado" : ""}`}>
-          Palestras
-        </h6>
-        <h6 onClick={() => setIndexAtivoFiltroPalestras("Tutorial")}
-            className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Tutorial" ? "selecionado" : ""}`}>
-          Tutoriais
-        </h6>
-        <h6 onClick={() => setIndexAtivoFiltroPalestras("Debate")}
-            className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Debate" ? "selecionado" : ""}`}>
-          Debates
-        </h6>
+        <h5>Filtrar por:</h5>
+        <div className='painel_filtro_de_palestras_todas_opcoes'>
+          <h6 onClick={() => setIndexAtivoFiltroPalestras("Todos")}
+              className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Todos" ? "selecionado" : ""}`}>
+            Todos
+          </h6>
+          <h6 onClick={() => setIndexAtivoFiltroPalestras("Palestra")}
+              className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Palestra" ? "selecionado" : ""}`}>
+            Palestras
+          </h6>
+          <h6 onClick={() => setIndexAtivoFiltroPalestras("Tutorial")}
+              className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Tutorial" ? "selecionado" : ""}`}>
+            Tutoriais
+          </h6>
+          <h6 onClick={() => setIndexAtivoFiltroPalestras("Debate")}
+              className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Debate" ? "selecionado" : ""}`}>
+            Debates
+          </h6>
+        </div>
       </div>
 
       <div className='painel_de_datas'>
@@ -396,8 +399,8 @@ export default function App() {
               <h6 className='card_palestra_infos_1_atividade'>{data['atividade']['br']}</h6>
             </div>
             <div className='card_palestra_infos_2'>
-              <h3>{data['titulo']['br']}</h3>
-              <h3>{data['descricao']['br']}</h3>
+              <h3 className='card_palestra_infos_2_titulo'>{data['titulo']['br']}</h3>
+              <h3 className='card_palestra_infos_2_descricao'>{data['descricao']['br']}</h3>
             </div>
             <div className='card_palestra_infos_3'>
               {data.palestrante.length > 1 ? (
