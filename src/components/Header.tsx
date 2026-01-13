@@ -60,7 +60,7 @@ export default function Header() {
                     </ul>
                     <ul className="Header_menu_desktop"><a href="#O_EVENTO">O evento</a></ul>
                     <ul className="Header_menu_desktop"><a href="#KEYNOTES">Keynotes</a></ul>
-                    <ul className="Header_menu_desktop">Programação</ul>
+                    <Link to="/programacao"><ul className="Header_menu_desktop">Programação</ul></Link>
                 </li>
             </div>
             <div className="Header_logo Header_menu_desktop_logo">
