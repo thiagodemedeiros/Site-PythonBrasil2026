@@ -7,6 +7,7 @@
     height: auto;
 
     position: fixed;
+    z-index: 50;
     bottom: 15px;
 }
 
@@ -14,18 +15,23 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    width: 30%;
+    justify-content: center;
+    width: auto;
+    gap: 10px;
 
-    border: 2px red solid;
+    border: 2px #E8F4BA solid;
+    background-color: #0F0F0F;
 
-    background-color: aliceblue;
-    padding: 20px 40px;
+    padding: 10px 10px;
     border-radius: 60px;
 
     & h4 {
-        border: 2px red solid;
+        cursor: pointer;
+        font-family: "Inter", sans-serif;
+        background-color: #E8F4BA;
         width: auto;
-        padding: 10px 25px;
+        padding: 15px 20px;
+        border-radius: 60px;
+        font-weight: 450;
     }
 }
