@@ -1,5 +1,5 @@
 import './styles/Carregamento.css'
-import img from "./../../public/img/components/carregamento/cobra_loading.svg"
+import img from "/img/components/carregamento/cobra_loading.svg"
 
 export default function Carregamento() {
     return (<>

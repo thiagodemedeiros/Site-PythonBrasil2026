@@ -22,6 +22,21 @@ i18n
                 planoDePatrocinio : "Plano de Patrocínio",
                 fechar : "Fechar"
               }
+            },
+            carrossel : {
+                pelaComunidade : "pela comunidade",
+                paraComunidade : "para comunidade"
+            },
+            buttonPrincipal : {
+                ingressos : "ingressos",
+                planoDePatrocinio : "Plano de Patrocínio",
+            },
+            home : {
+                section2 : {
+                    paragrafo1 : "A <1>Python Brasil 2026</1> é a maior conferência sobre linguagem de programação Python do Brasil e da América Latina.",
+                    paragrafo2 : "Serão 5 dias de imersão com atividades que vão desde contribuir para projetos de software livre, participar de treinamentos e adquirir novos conhecimentos com profissionais renomados da comunidade.",
+                    paragrafo3 : "A edição de 2026 está sendo organizada pela comunidade Python de <1>Florianópolis/SC</1> com o apoio da APyB (Associação Python Brasil)"
+                }
             }
         }
       },
@@ -42,6 +57,21 @@ i18n
                   planoDePatrocinio: "Sponsorship Plan",
                   fechar : "Close"
                 }
+            },
+            carrossel: {
+              pelaComunidade: "by the community",
+              paraComunidade: "for the community"
+            },
+            buttonPrincipal : {
+                ingressos : "Tickets!",
+                planoDePatrocinio : "Sponsorship Plan",
+            },
+            home : {
+                section2: {
+                  paragrafo1: "The <1>Python Brazil 2026</1> is the largest conference focused on the Python programming language in Brazil and Latin America.",
+                  paragrafo2: "There will be 5 days of immersion with activities ranging from contributing to open source projects, participating in training sessions, and gaining new knowledge from renowned professionals in the community.",
+                  paragrafo3: "The 2026 edition is being organized by the Python community of <1>Florianópolis/SC</1> with the support of APyB (Python Brazil Association)."
+                }
             }
         }
       },
@@ -61,6 +91,21 @@ i18n
                   ComprarIngresso: "¡Comprar Entradas!",
                   planoDePatrocinio: "Plan de Patrocinio",
                   fechar : "Cerrar"
+                }
+            },
+            carrossel: {
+              pelaComunidade: "por la comunidad",
+              paraComunidade: "para la comunidad"
+            },
+            buttonPrincipal : {
+                ingressos : "!Entradas!",
+                planoDePatrocinio : "Plan de Patrocinio",
+            },
+            home : {
+                section2: {
+                  paragrafo1: "La <1>Python Brasil 2026</1> es la mayor conferencia sobre el lenguaje de programación Python en Brasil y América Latina.",
+                  paragrafo2: "Serán 5 días de inmersión con actividades que van desde contribuir a proyectos de software libre, participar en capacitaciones y adquirir nuevos conocimientos con profesionales reconocidos de la comunidad.",
+                  paragrafo3: "La edición de 2026 está siendo organizada por la comunidad Python de <1>Florianópolis/SC</1> con el apoyo de la APyB (Asociación Python Brasil)."
                 }
             }
         }
