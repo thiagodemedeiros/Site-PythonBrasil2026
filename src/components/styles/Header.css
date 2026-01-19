@@ -80,7 +80,6 @@
         justify-content: space-between;
         width: 15vw;
         max-width: 150px;
-        /* border: 2px red solid; */
     }
 
     & ul:hover {
@@ -146,6 +145,21 @@
             max-width: 600px;
             height: auto;
             margin: 0;
+        }
+    }
+
+    .Header_menu_direito {
+        gap: 0;
+        justify-content: end;
+        width: 100%;
+        margin-left: 20px;
+        max-width: none;
+    }
+
+    .Header_linguagem {
+        & li {
+            width: 100px;
+            margin-right: 20px;
         }
     }
 

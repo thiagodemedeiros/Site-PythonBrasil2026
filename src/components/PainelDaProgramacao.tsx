@@ -353,7 +353,6 @@ type Lang = 'br' | 'en' | 'es'
 export default function PainelDaProgramacao() {
   const { t, i18n } = useTranslation();
   const lang = i18n.language as Lang
-  console.log("Idioma atual:", i18n.language);
   const [indexAtivo, setIndex] = useState(0);
   const [indexAtivoFiltroPalestras, setIndexAtivoFiltroPalestras] = useState("Todos");
 

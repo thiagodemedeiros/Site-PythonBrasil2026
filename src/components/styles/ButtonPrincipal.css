@@ -35,3 +35,9 @@
         font-weight: 450;
     }
 }
+
+@media (max-width : 800px) {
+    .ButtonPrincipal {
+        display: none;
+    }
+}
