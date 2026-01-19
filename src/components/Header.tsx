@@ -30,25 +30,25 @@ export default function Header() {
                                             <img src={logo_menu} alt="" />
                                             <div className="Menu_itens_botoes_linha1_fechar">
                                                 <img src={X_menu} alt="" onClick={() => setIsModalOpen(false)}/>
-                                                <p>Fechar</p>
+                                                <p>{t("header.menu.fechar")}</p>
                                             </div>
                                         </div>
                                         <div className="Menu_itens_botoes_linha2">
-                                            <Link to='/'><a href="#HOME" onClick={() => setIsModalOpen(false)}>INÍCIO</a></Link>
-                                            <a href="#O_EVENTO" onClick={() => setIsModalOpen(false)}>O EVENTO</a>
+                                            <Link to='/'><a href="#HOME" onClick={() => setIsModalOpen(false)}>{t("header.menu.inicio")}</a></Link>
+                                            <a href="#O_EVENTO" onClick={() => setIsModalOpen(false)}>{t("header.menu.oEvento")}</a>
                                             <a href="#KEYNOTES" onClick={() => setIsModalOpen(false)}>KEYNOTES</a>
-                                            <Link to="/programacao" onClick={() => setIsModalOpen(false)}>PROGRAMAÇÃO</Link>
-                                            <a href="#GUIA_DA_CIDADE" onClick={() => setIsModalOpen(false)}>GUIA DA CIDADE</a>
-                                            <a href="#PATROCINADORES" onClick={() => setIsModalOpen(false)}>PATROCINADORES</a>
+                                            <Link to="/programacao" onClick={() => setIsModalOpen(false)}>{t("header.menu.programacao")}</Link>
+                                            <a href="#GUIA_DA_CIDADE" onClick={() => setIsModalOpen(false)}>{t("header.menu.guiaDaCidade")}</a>
+                                            <a href="#PATROCINADORES" onClick={() => setIsModalOpen(false)}>{t("header.menu.patrocinadores")}</a>
                                             <Link to="/perguntas_frequentes" onClick={() => setIsModalOpen(false)}>FAQ</Link>
-                                            <a href="#CONTATO_footer" onClick={() => setIsModalOpen(false)}>CONTATO</a>
+                                            <a href="#CONTATO_footer" onClick={() => setIsModalOpen(false)}>{t("header.menu.contato")}</a>
                                         </div>
                                         <div className="Menu_itens_botoes_linha3">
                                             <a href="">
-                                                <button>Comprar Ingressos!</button>
+                                                <button>{t("header.menu.ComprarIngresso")}</button>
                                             </a>
                                             <a href="">
-                                                <button>Plano de Patrocínio</button>
+                                                <button>{t("header.menu.planoDePatrocinio")}</button>
                                             </a>
                                         </div>
                                         <img src={surf_menu} alt="" className="Menu_itens_surfista_menu_mobile"/>
@@ -85,7 +85,7 @@ export default function Header() {
                         </ul>
                     </li>
                 </div>
-                <button>Comprar Ingressos!</button>
+                <button>{t("header.ComprarIngresso")}</button>
             </div>
         </div>
         <div className="Header_logo Header_menu_mobile">
