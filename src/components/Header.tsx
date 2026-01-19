@@ -2,6 +2,7 @@ import "./styles/Header.css"
 import "./styles/Menu.css"
 import { useState } from 'react';
 import { Link } from "react-router-dom"
+import { useTranslation } from "react-i18next";
 import icone_acima_do_menu from "/img/components/header/icone_acima_do_menu.png"
 import logo from "/img/components/header/logo.svg"
 import logo_menu from "/img/components/menu/Logo.svg"
@@ -10,6 +11,7 @@ import surf_menu from "/img/components/menu/surf.svg"
 
 export default function Header() {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const { t, i18n } = useTranslation();
 
     return (<header className="Header">
         <div className="Header_itens">
@@ -58,9 +60,9 @@ export default function Header() {
 
                         </div>
                     </ul>
-                    <ul className="Header_menu_desktop"><a href="#O_EVENTO">O evento</a></ul>
+                    <ul className="Header_menu_desktop"><a href="#O_EVENTO">{t("header.OEvento")}</a></ul>
                     <ul className="Header_menu_desktop"><a href="#KEYNOTES">Keynotes</a></ul>
-                    <Link to="/programacao"><ul className="Header_menu_desktop">Programação</ul></Link>
+                    <Link to="/programacao"><ul className="Header_menu_desktop">{t("header.Programacao")}</ul></Link>
                 </li>
             </div>
             <div className="Header_logo Header_menu_desktop_logo">
@@ -69,9 +71,18 @@ export default function Header() {
             <div className="Header_menu_direito">
                 <div className="Header_linguagem">
                     <li>
-                        <ul className="Header_menu_desktop">BR</ul>
-                        <ul className="Header_menu_desktop">EN</ul>
-                        <ul className="Header_menu_desktop">ES</ul>
+                        <ul className="Header_menu_desktop"
+                            onClick={() => i18n.changeLanguage("br")}>
+                                BR
+                        </ul>
+                        <ul className="Header_menu_desktop"
+                            onClick={() => i18n.changeLanguage("en")}>
+                                EN
+                        </ul>
+                        <ul className="Header_menu_desktop"
+                            onClick={() => i18n.changeLanguage("es")}>
+                                ES
+                        </ul>
                     </li>
                 </div>
                 <button>Comprar Ingressos!</button>
