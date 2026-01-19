@@ -48,6 +48,13 @@ i18n
                 ingressos : "ingressos",
                 planoDePatrocinio : "Plano de Patrocínio",
             },
+            painelDaProgramacao : {
+                filtrarPor : "Filtrar por:",
+                todos : "Todos",
+                palestras : "Palestras",
+                tutoriais : "Tutoriais",
+                debates : "Debates",
+            },
             home : {
                 section2 : {
                     paragrafo1 : "A <1>Python Brasil 2026</1> é a maior conferência sobre linguagem de programação Python do Brasil e da América Latina.",
@@ -152,6 +159,13 @@ i18n
                 ingressos : "Tickets!",
                 planoDePatrocinio : "Sponsorship Plan",
             },
+            painelDaProgramacao: {
+                filtrarPor: "Filter by:",
+                todos: "All",
+                palestras: "Talks",
+                tutoriais: "Tutorials",
+                debates: "Debates",
+            },
             home : {
                 section2: {
                   paragrafo1: "The <1>Python Brazil 2026</1> is the largest conference focused on the Python programming language in Brazil and Latin America.",
@@ -255,6 +269,13 @@ i18n
             buttonPrincipal : {
                 ingressos : "!Entradas!",
                 planoDePatrocinio : "Plan de Patrocinio",
+            },
+            painelDaProgramacao: {
+                filtrarPor: "Filtrar por:",
+                todos: "Todos",
+                palestras: "Charlas",
+                tutoriais: "Tutoriales",
+                debates: "Debates",
             },
             home : {
                 section2: {

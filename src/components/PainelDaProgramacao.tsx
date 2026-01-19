@@ -5,7 +5,7 @@ import dot2 from '/img/components/painelDaProgramacao/dot2.png'
 import { useTranslation } from "react-i18next";
 
 const datas = [
-  {'data' : 'Qua, 14',
+  {'data' : {'br' : 'Qua, 14', 'en' : 'Wed, 14', 'es' : 'Mié, 14'},
    'info' : [
       {
          'id' : 1,
@@ -145,7 +145,7 @@ const datas = [
       },
     ]
   },
-  {'data' : 'Qui, 15',
+  {'data' : {'br' : 'Qua, 14', 'en' : 'Wed, 14', 'es' : 'Mié, 14'},
    'info' : 
    [
     {
@@ -186,7 +186,7 @@ const datas = [
     }
    ]
   },
-  {'data' : 'Sex, 16',
+  {'data' : {'br' : 'Qua, 14', 'en' : 'Wed, 14', 'es' : 'Mié, 14'},
    'info' : 
    [
     {
@@ -226,7 +226,7 @@ const datas = [
     }
    ]
   },
-  {'data' : 'Sab, 17',
+  {'data' : {'br' : 'Qua, 14', 'en' : 'Wed, 14', 'es' : 'Mié, 14'},
    'info' : 
    [
     {
@@ -266,7 +266,7 @@ const datas = [
     }
    ]
   },
-  {'data' : 'Dom, 18',
+  {'data' : {'br' : 'Qua, 14', 'en' : 'Wed, 14', 'es' : 'Mié, 14'},
    'info' : 
    [
     {
@@ -306,7 +306,7 @@ const datas = [
     }
    ]
   },
-  {'data' : 'Seg, 19',
+  {'data' : {'br' : 'Qua, 14', 'en' : 'Wed, 14', 'es' : 'Mié, 14'},
    'info' : 
    [
     {
@@ -351,7 +351,7 @@ const datas = [
 type Lang = 'br' | 'en' | 'es'
 
 export default function PainelDaProgramacao() {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const lang = i18n.language as Lang
   console.log("Idioma atual:", i18n.language);
   const [indexAtivo, setIndex] = useState(0);
@@ -366,23 +366,23 @@ export default function PainelDaProgramacao() {
       <div className='painel_das_palestras'>
 
       <div className='painel_filtro_de_palestras'>
-        <h5>Filtrar por:</h5>
+        <h5>{t("painelDaProgramacao.filtrarPor")}</h5>
         <div className='painel_filtro_de_palestras_todas_opcoes'>
           <h6 onClick={() => setIndexAtivoFiltroPalestras("Todos")}
               className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Todos" ? "selecionado" : ""}`}>
-            Todos
+            {t("painelDaProgramacao.todos")}
           </h6>
           <h6 onClick={() => setIndexAtivoFiltroPalestras("Palestra")}
               className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Palestra" ? "selecionado" : ""}`}>
-            Palestras
+            {t("painelDaProgramacao.palestras")}
           </h6>
           <h6 onClick={() => setIndexAtivoFiltroPalestras("Tutorial")}
               className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Tutorial" ? "selecionado" : ""}`}>
-            Tutoriais
+            {t("painelDaProgramacao.tutoriais")}
           </h6>
           <h6 onClick={() => setIndexAtivoFiltroPalestras("Debate")}
               className={`painel_filtro_de_palestras_opcao ${indexAtivoFiltroPalestras == "Debate" ? "selecionado" : ""}`}>
-            Debates
+            {t("painelDaProgramacao.debates")}
           </h6>
         </div>
       </div>
@@ -391,7 +391,7 @@ export default function PainelDaProgramacao() {
         {datas.map((data, index) => (
           <div  className={`datas_palestras ${index === indexAtivo ? "ativo" : ""}`}
                 key={index} onClick={() => setIndex(index)}>
-            <h2>{data.data}</h2>
+            <h2>{data.data[lang]}</h2>
           </div>
         ))}
       </div>
