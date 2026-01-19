@@ -116,14 +116,13 @@
     }
 
     .Header_menu_direito {
-        gap: 0;
+        gap: 20px;
         width: auto;
-        max-width: 250px;
     }
 
     .Header_linguagem {
         & li {
-            width: auto;
+            width: 90px;
         }
     }
 
