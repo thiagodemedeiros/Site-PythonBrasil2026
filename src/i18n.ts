@@ -23,6 +23,23 @@ i18n
                 fechar : "Fechar"
               }
             },
+            footer : {
+                site : 'Site',
+                inicio : "Início",
+                oEvento : "O evento",
+                programacao : "Programação",
+                guiaDaCidade : "Guia da cidade",
+                patrocinadores : "Patrocinadores",
+                contato : "Contato",
+                inscrevaSe : "Inscreva-se",
+                nossasRedes : "Nossas redes",
+                linksDaAPyB : "Links da APyB",
+                codigoDeConduta : "Código de conduta",
+                formulario : "Formulário para relatos do Código de conduta",
+                comprarIngressos : "Comprar Ingressos!",
+                planoDePatrocinio : "Plano de Patrocínio",
+                politicasDePrivacidade : "Politicas de privacidade"
+            },
             carrossel : {
                 pelaComunidade : "pela comunidade",
                 paraComunidade : "para comunidade"
@@ -89,6 +106,23 @@ i18n
                   fechar : "Close"
                 }
             },
+            footer: {
+                site: "Website",
+                inicio: "Home",
+                oEvento: "The Event",
+                programacao: "Schedule",
+                guiaDaCidade: "City Guide",
+                patrocinadores: "Sponsors",
+                contato: "Contact",
+                inscrevaSe: "Sign Up",
+                nossasRedes: "Our Social Media",
+                linksDaAPyB: "APyB Links",
+                codigoDeConduta: "Code of Conduct",
+                formulario: "Code of Conduct Report Form",
+                comprarIngressos: "Buy Tickets!",
+                planoDePatrocinio: "Sponsorship Plan",
+                politicasDePrivacidade: "Privacy Policy"
+            },
             carrossel: {
               pelaComunidade: "by the community",
               paraComunidade: "for the community"
@@ -154,6 +188,23 @@ i18n
                   planoDePatrocinio: "Plan de Patrocinio",
                   fechar : "Cerrar"
                 }
+            },
+            footer: {
+                site: "Sitio",
+                inicio: "Inicio",
+                oEvento: "El Evento",
+                programacao: "Programación",
+                guiaDaCidade: "Guía de la ciudad",
+                patrocinadores: "Patrocinadores",
+                contato: "Contacto",
+                inscrevaSe: "Inscríbete",
+                nossasRedes: "Nuestras redes",
+                linksDaAPyB: "Enlaces de APyB",
+                codigoDeConduta: "Código de conducta",
+                formulario: "Formulario para reportes del Código de conducta",
+                comprarIngressos: "¡Comprar Entradas!",
+                planoDePatrocinio: "Plan de Patrocinio",
+                politicasDePrivacidade: "Políticas de privacidad"
             },
             carrossel: {
               pelaComunidade: "por la comunidad",

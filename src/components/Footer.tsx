@@ -1,7 +1,10 @@
 import "./styles/Footer.css"
 import logo from "/img/components/footer/logo.png"
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+    const { t } = useTranslation();
+
     return (<footer className="Footer" id="CONTATO_footer">
             <div className="Footer_barra_verde"></div>
         <div className="Footer_logo">
@@ -9,21 +12,21 @@ export default function Footer() {
         </div>
         <div className="Footer_links">
             <div className="Footer_links_site">
-                <h4>Site</h4>
+                <h4>{t("footer.site")}</h4>
                 <li>
-                    <ul>Início</ul>
-                    <ul>O evento</ul>
+                    <ul>{t("footer.inicio")}</ul>
+                    <ul>{t("footer.oEvento")}</ul>
                     <ul>Keynotes</ul>
-                    <ul>Programação</ul>
-                    <ul>Guia da cidade</ul>
-                    <ul>Patrocinadores</ul>
+                    <ul>{t("footer.programacao")}</ul>
+                    <ul>{t("footer.guiaDaCidade")}</ul>
+                    <ul>{t("footer.patrocinadores")}</ul>
                     <ul>FAQ</ul>
-                    <ul>Contato</ul>
-                    <ul>Inscreva-se</ul>
+                    <ul>{t("footer.contato")}</ul>
+                    <ul>{t("footer.inscrevaSe")}</ul>
                 </li>
             </div>
             <div className="Footer_links_nossas_redes">
-                <h4>Nossas redes</h4>
+                <h4>{t("footer.nossasRedes")}</h4>
                 <li>
                     <ul><img src="" alt="" />Instagram</ul>
                     <ul><img src="" alt="" />Linkedin</ul>
@@ -37,20 +40,20 @@ export default function Footer() {
                 </li>
             </div>
             <div className="Footer_links_da_apyb">
-                <h4>Links da APyB</h4>
+                <h4>{t("footer.linksDaAPyB")}</h4>
                 <li>
                     <ul>APyB</ul>
-                    <ul>Código de conduta</ul>
-                    <ul>Formulário para relatos do Código de conduta</ul>
+                    <ul>{t("footer.codigoDeConduta")}</ul>
+                    <ul>{t("footer.formulario")}</ul>
                     <ul>Dormeles Tremea / Jean Ferri</ul>
                 </li>
             </div>
             <div className="Footer_links_botoes_politicas">
                 <div className="Footer_links_botoes_politicas_buttons">
-                    <button>Comprar Ingressos!</button>
-                    <button>Plano de Patrocínio</button>
+                    <button>{t("footer.comprarIngressos")}</button>
+                    <button>{t("footer.planoDePatrocinio")}</button>
                 </div>
-                <h4>Politicas de privacidade</h4>
+                <h4>{t("footer.politicasDePrivacidade")}</h4>
             </div>
         </div>
     </footer>)
