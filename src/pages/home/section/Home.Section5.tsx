@@ -1,19 +1,22 @@
 import "../styles/Home.Section5.css"
 import cidade from '/img/page/home/section5/cidade.png'
 import Carrossel from "../../../components/Carrossel"
+import { useTranslation } from "react-i18next";
 
 export default function Home_Section5() {
+    const { t } = useTranslation();
+    
     return(<>
     <section className="Home_Section5" id="GUIA_DA_CIDADE">
             <div className="Home_Section5_itens">
                 <div className="Home_Section5_itens_texto">
-                    <h4>Guia da Cidade</h4>
+                    <h4>{t("home.section5.guiaDaCidade")}</h4>
                     <div className="Home_Section5_itens_texto_p">   
-                        <p>Em outubro, em Florianópolis, você pode aproveitar as praias (ainda não tão cheias), fazer trilhas, explorar o centro histórico, visitar o Projeto Tamar, relaxar em parques, curtir a gastronomia local e aproveitar ao máximo a Python Brasil 2026 com um clima fresco.</p>
-                        <p>A cidade está na primavera, com um clima que combina dias quentes e ensolarados com possibilidade de chuvas e dias nublados.</p>
-                        <p>Preparamos um guia do que fazer nas proximidades do evento e também passeios pela cidade, conheça:</p>
+                        <p>{t("home.section5.paragrafo1")}</p>
+                        <p>{t("home.section5.paragrafo2")}</p>
+                        <p>{t("home.section5.paragrafo3")}</p>
                     </div>
-                    <a href=""><button>Guia da Cidade</button></a>
+                    <a href=""><button>{t("home.section5.guiaDaCidade")}</button></a>
                 </div>
                 <img src={cidade} alt="Imagem da cidade" />
             </div>

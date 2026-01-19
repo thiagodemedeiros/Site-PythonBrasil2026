@@ -36,7 +36,30 @@ i18n
                     paragrafo1 : "A <1>Python Brasil 2026</1> é a maior conferência sobre linguagem de programação Python do Brasil e da América Latina.",
                     paragrafo2 : "Serão 5 dias de imersão com atividades que vão desde contribuir para projetos de software livre, participar de treinamentos e adquirir novos conhecimentos com profissionais renomados da comunidade.",
                     paragrafo3 : "A edição de 2026 está sendo organizada pela comunidade Python de <1>Florianópolis/SC</1> com o apoio da APyB (Associação Python Brasil)"
-                }
+                },
+                section3 : {},
+                section4 : {
+                    submissaoDeAtividades : "Submissão de Atividades",
+                    enviarAtividade : "Enviar Atividade",
+                    regulamento : "Regulamento",
+                    paragrafo1 : "Acompanhe as novidades nas nossas redes sociais"
+                },
+                section5 : {
+                    guiaDaCidade : "Guia da Cidade",
+                    paragrafo1 : "Em outubro, em Florianópolis, você pode aproveitar as praias (ainda não tão cheias), fazer trilhas, explorar o centro histórico, visitar o Projeto Tamar, relaxar em parques, curtir a gastronomia local e aproveitar ao máximo a Python Brasil 2026 com um clima fresco.",
+                    paragrafo2 : "A cidade está na primavera, com um clima que combina dias quentes e ensolarados com possibilidade de chuvas e dias nublados.",
+                    paragrafo3 : "Preparamos um guia do que fazer nas proximidades do evento e também passeios pela cidade, conheça:"
+                },
+                section6 : {
+                    localizacao : "Localização",
+                    palestras : "Palestras",
+                    palestrasData : "14 a 19 de Outubro",
+                    paragrafo1 : "Dias principais do evento, espaços para job fair, network, palestras de diversos temas acontecendo simultaneamente.",
+                    plantaDoEvento : "Planta do Evento",
+                    verNoMapa : "Ver no mapa",
+                    tutoriais : "Tutoriais",
+                    aDefinir : "A definir"
+                },
             }
         }
       },
@@ -71,6 +94,29 @@ i18n
                   paragrafo1: "The <1>Python Brazil 2026</1> is the largest conference focused on the Python programming language in Brazil and Latin America.",
                   paragrafo2: "There will be 5 days of immersion with activities ranging from contributing to open source projects, participating in training sessions, and gaining new knowledge from renowned professionals in the community.",
                   paragrafo3: "The 2026 edition is being organized by the Python community of <1>Florianópolis/SC</1> with the support of APyB (Python Brazil Association)."
+                },
+                section3 : {},
+                section4: {
+                    submissaoDeAtividades: "Activity Submission",
+                    enviarAtividade: "Submit Activity",
+                    regulamento: "Regulations",
+                    paragrafo1: "Follow the latest updates on our social media"
+                },
+                section5: {
+                    guiaDaCidade: "City Guide",
+                    paragrafo1: "In October, in Florianópolis, you can enjoy the beaches (not too crowded yet), go hiking, explore the historic center, visit Projeto Tamar, relax in parks, enjoy the local cuisine, and make the most of Python Brasil 2026 with cool weather.",
+                    paragrafo2: "The city is in spring, with a climate that combines warm, sunny days with the possibility of rain and cloudy days.",
+                    paragrafo3: "We have prepared a guide on what to do near the event as well as tours around the city. Discover:"
+                },
+                section6: {
+                    localizacao: "Location",
+                    palestras: "Talks",
+                    palestrasData: "October 14–19",
+                    paragrafo1: "Main days of the event, with spaces for the job fair, networking, and talks on various topics happening simultaneously.",
+                    plantaDoEvento: "Event Map",
+                    verNoMapa: "View on map",
+                    tutoriais: "Tutorial Sessions",
+                    aDefinir: "To be defined"
                 }
             }
         }
@@ -106,6 +152,29 @@ i18n
                   paragrafo1: "La <1>Python Brasil 2026</1> es la mayor conferencia sobre el lenguaje de programación Python en Brasil y América Latina.",
                   paragrafo2: "Serán 5 días de inmersión con actividades que van desde contribuir a proyectos de software libre, participar en capacitaciones y adquirir nuevos conocimientos con profesionales reconocidos de la comunidad.",
                   paragrafo3: "La edición de 2026 está siendo organizada por la comunidad Python de <1>Florianópolis/SC</1> con el apoyo de la APyB (Asociación Python Brasil)."
+                },
+                section3 : {},
+                section4: {
+                    submissaoDeAtividades: "Envío de Actividades",
+                    enviarAtividade: "Enviar Actividad",
+                    regulamento: "Reglamento",
+                    paragrafo1: "Sigue las novedades en nuestras redes sociales"
+                },
+                section5: {
+                    guiaDaCidade: "Guía de la Ciudad",
+                    paragrafo1: "En octubre, en Florianópolis, puedes disfrutar de las playas (aún no tan llenas), hacer senderismo, explorar el centro histórico, visitar el Proyecto Tamar, relajarte en parques, disfrutar de la gastronomía local y aprovechar al máximo Python Brasil 2026 con un clima fresco.",
+                    paragrafo2: "La ciudad está en primavera, con un clima que combina días cálidos y soleados con posibilidad de lluvias y días nublados.",
+                    paragrafo3: "Hemos preparado una guía de qué hacer cerca del evento y también paseos por la ciudad. Descubre:"
+                },
+                section6: {
+                    localizacao: "Ubicación",
+                    palestras: "Charlas",
+                    palestrasData: "14 al 19 de octubre",
+                    paragrafo1: "Días principales del evento, con espacios para feria de empleo, networking y charlas sobre diversos temas que ocurren simultáneamente.",
+                    plantaDoEvento: "Plano del Evento",
+                    verNoMapa: "Ver en el mapa",
+                    tutoriais: "Talleres",
+                    aDefinir: "Por definir"
                 }
             }
         }
