@@ -85,6 +85,9 @@
 
     & ul:hover {
         cursor: pointer;
+    }
+
+    .lingua_selecionada {
         color: greenyellow;
     }
 }

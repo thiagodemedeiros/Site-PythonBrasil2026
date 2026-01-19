@@ -11,6 +11,7 @@ import surf_menu from "/img/components/menu/surf.svg"
 
 export default function Header() {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [linguaSelecionada, setLinguaSelecionada] = useState("br")
     const { t, i18n } = useTranslation();
 
     return (<header className="Header">
@@ -71,16 +72,16 @@ export default function Header() {
             <div className="Header_menu_direito">
                 <div className="Header_linguagem">
                     <li>
-                        <ul className="Header_menu_desktop"
-                            onClick={() => i18n.changeLanguage("br")}>
+                        <ul className={`${linguaSelecionada === "br" ? "lingua_selecionada" : ""}`}
+                            onClick={() => {i18n.changeLanguage("br"); setLinguaSelecionada("br")}}>
                                 BR
                         </ul>
-                        <ul className="Header_menu_desktop"
-                            onClick={() => i18n.changeLanguage("en")}>
+                        <ul className={`${linguaSelecionada === "en" ? "lingua_selecionada" : ""}`}
+                            onClick={() => {i18n.changeLanguage("en"); setLinguaSelecionada("en")}}>
                                 EN
                         </ul>
-                        <ul className="Header_menu_desktop"
-                            onClick={() => i18n.changeLanguage("es")}>
+                        <ul className={`${linguaSelecionada === "es" ? "lingua_selecionada" : ""}`}
+                            onClick={() => {i18n.changeLanguage("es"); setLinguaSelecionada("es")}}>
                                 ES
                         </ul>
                     </li>
