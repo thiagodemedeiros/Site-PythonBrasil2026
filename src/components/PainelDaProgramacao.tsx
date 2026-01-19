@@ -2,6 +2,7 @@ import './styles/PainelDaProgramacao.css'
 import { useState } from "react";
 import dot1 from '/img/components/painelDaProgramacao/dot1.png'
 import dot2 from '/img/components/painelDaProgramacao/dot2.png'
+import { useTranslation } from "react-i18next";
 
 const datas = [
   {'data' : 'Qua, 14',
@@ -347,7 +348,12 @@ const datas = [
   },
 ]
 
+type Lang = 'br' | 'en' | 'es'
+
 export default function PainelDaProgramacao() {
+  const { i18n } = useTranslation();
+  const lang = i18n.language as Lang
+  console.log("Idioma atual:", i18n.language);
   const [indexAtivo, setIndex] = useState(0);
   const [indexAtivoFiltroPalestras, setIndexAtivoFiltroPalestras] = useState("Todos");
 
@@ -396,12 +402,12 @@ export default function PainelDaProgramacao() {
             <div className='card_palestra_infos_1'>
               <h6 className='card_palestra_infos_1_horario'>{data['horario']}</h6>
               <h6 className='card_palestra_infos_1_duracao'>{data['duracao']}</h6>
-              <h6 className='card_palestra_infos_1_nivel'>{data['nivel']['br']}</h6>
-              <h6 className='card_palestra_infos_1_atividade'>{data['atividade']['br']}</h6>
+              <h6 className='card_palestra_infos_1_nivel'>{data['nivel'][lang]}</h6>
+              <h6 className='card_palestra_infos_1_atividade'>{data['atividade'][lang]}</h6>
             </div>
             <div className='card_palestra_infos_2'>
-              <h3 className='card_palestra_infos_2_titulo'>{data['titulo']['br']}</h3>
-              <h3 className='card_palestra_infos_2_descricao'>{data['descricao']['br']}</h3>
+              <h3 className='card_palestra_infos_2_titulo'>{data['titulo'][lang]}</h3>
+              <h3 className='card_palestra_infos_2_descricao'>{data['descricao'][lang]}</h3>
             </div>
             <div className='card_palestra_infos_3'>
               {data.palestrante.length > 1 ? (
