@@ -60,6 +60,14 @@ i18n
                     tutoriais : "Tutoriais",
                     aDefinir : "A definir"
                 },
+                section7 : {
+                    patrocinadores : "Patrocinadores",
+                    ouro : "Ouro",
+                    prata : "Prata",
+                    bronze : "Bronze",
+                    apoiador : "Apoiador",
+                    comunidade : "Comunidade"
+                }
             }
         }
       },
@@ -117,6 +125,14 @@ i18n
                     verNoMapa: "View on map",
                     tutoriais: "Tutorial Sessions",
                     aDefinir: "To be defined"
+                },
+                section7: {
+                    patrocinadores: "Sponsors",
+                    ouro: "Gold",
+                    prata: "Silver",
+                    bronze: "Bronze",
+                    apoiador: "Supporter",
+                    comunidade: "Community"
                 }
             }
         }
@@ -175,6 +191,14 @@ i18n
                     verNoMapa: "Ver en el mapa",
                     tutoriais: "Talleres",
                     aDefinir: "Por definir"
+                },
+                section7: {
+                    patrocinadores: "Patrocinadores",
+                    ouro: "Oro",
+                    prata: "Plata",
+                    bronze: "Bronce",
+                    apoiador: "Colaborador",
+                    comunidade: "Comunidad"
                 }
             }
         }

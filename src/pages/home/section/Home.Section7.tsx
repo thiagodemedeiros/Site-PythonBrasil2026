@@ -1,4 +1,5 @@
 import "../styles/Home.Section7.css"
+import { useTranslation } from "react-i18next";
 import cobra_topo from '/img/page/home/section7/cobra_topo.png'
 import cobra_baixo from '/img/page/home/section7/cobra_baixo.png'
 import bandeira_ouro from '/img/page/home/section7/patrocinador/ouro/bandeira_ouro.png'
@@ -23,17 +24,19 @@ import oracle from '/img/page/home/section7/apoiador/oracle.png'
 
 
 export default function Home_Section6() {
+    const { t } = useTranslation();
+
     return(<>
     <section className="Home_Section7" id="PATROCINADORES">
         <img src={cobra_topo} alt="" className="Home_Section7_cobra_topo"/>
         <div className="Home_Section7_grupo_de_patrocinadores">
-            <h4>Patrocinadores</h4>
+            <h4>{t("home.section7.patrocinadores")}</h4>
             <div className="Home_Section7_patrocinadores">
                 <div className="Home_Section7_patrocinadores_bandeira">
                     <div className="Home_Section7_patrocinadores_bandeira_linha"></div>
                     <img src={bandeira_ouro} alt="" />
                 </div>
-                <h5>Ouro</h5>
+                <h5>{t("home.section7.ouro")}</h5>
                 <div className="Home_Section7_patrocinadores_logos patrocinadores_ouro">
                     <img src={elastic} alt="" />
                     <img src={nicbr} alt="" />
@@ -45,7 +48,7 @@ export default function Home_Section6() {
                     <div className="Home_Section7_patrocinadores_bandeira_linha"></div>
                     <img src={bandeira_prata} alt="" />
                 </div>
-                <h5>Prata</h5>
+                <h5>{t("home.section7.prata")}</h5>
                 <div className="Home_Section7_patrocinadores_logos">
                     <img src={cafe} alt="" />
                     <img src={cerc} alt="" />
@@ -58,7 +61,7 @@ export default function Home_Section6() {
                     <div className="Home_Section7_patrocinadores_bandeira_linha"></div>
                     <img src={bandeira_bronze} alt="" />
                 </div>
-                <h5>Bronze</h5>
+                <h5>{t("home.section7.bronze")}</h5>
                 <div className="Home_Section7_patrocinadores_logos">
                     <img src={alurap} alt="" />
                     <img src={PSF} alt="" />
@@ -72,7 +75,7 @@ export default function Home_Section6() {
                     <div className="Home_Section7_patrocinadores_bandeira_linha"></div>
                     <div className="Home_Section7_patrocinadores_bandeira_linha_espacamento"></div>
                 </div>
-                <h5>Apoiador</h5>
+                <h5>{t("home.section7.apoiador")}</h5>
                 <div className="Home_Section7_patrocinadores_logos">
                     <img src={aws} alt="" />
                     <img src={crio} alt="" />
@@ -86,7 +89,7 @@ export default function Home_Section6() {
                     <div className="Home_Section7_patrocinadores_bandeira_linha"></div>
                     <div className="Home_Section7_patrocinadores_bandeira_linha_espacamento"></div>
                 </div>
-                <h5>Comunidade</h5>
+                <h5>{t("home.section7.comunidade")}</h5>
                 <div className="Home_Section7_patrocinadores_logos">
                     <img src={Garoa} alt="" />
                     <img src={Plone} alt="" />
