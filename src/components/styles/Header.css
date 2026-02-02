@@ -171,6 +171,13 @@
     }
 }
 
+@media (max-width : 400px) {
+    .Header_menu_direito {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
 @media (max-width : 250px) {
     .Header_itens {
         flex-direction: column;
@@ -180,7 +187,8 @@
 
     .Header_menu_direito button {
         padding: 0;
-        width: 140px;
+        width: 80vw;
+        max-width: 140px;
         height: 60px;
         border-radius: 60px;
         background-color: greenyellow;
