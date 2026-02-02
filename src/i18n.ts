@@ -47,6 +47,7 @@ i18n
             buttonPrincipal : {
                 ingressos : "ingressos",
                 planoDePatrocinio : "Plano de Patrocínio",
+                linkPlanoDePatrocinio : "https://www.canva.com/design/DAG4CpYjEEA/80Fj01pDqqpzqmK7rWSCIg/view?utlId=h48bf80d827"
             },
             painelDaProgramacao : {
                 filtrarPor : "Filtrar por:",
@@ -158,6 +159,7 @@ i18n
             buttonPrincipal : {
                 ingressos : "Tickets!",
                 planoDePatrocinio : "Sponsorship Plan",
+                linkPlanoDePatrocinio : "https://www.canva.com/design/DAG4Csp6jow/oHUHIyoYvfHk2yE_s2Y_DQ/view?utlId=hc697b2b93b"
             },
             painelDaProgramacao: {
                 filtrarPor: "Filter by:",
@@ -269,6 +271,7 @@ i18n
             buttonPrincipal : {
                 ingressos : "!Entradas!",
                 planoDePatrocinio : "Plan de Patrocinio",
+                linkPlanoDePatrocinio : "https://www.canva.com/design/DAG4CpYjEEA/80Fj01pDqqpzqmK7rWSCIg/view?utlId=h48bf80d827"
             },
             painelDaProgramacao: {
                 filtrarPor: "Filtrar por:",
