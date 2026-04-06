@@ -16,7 +16,7 @@ export default function Home_Section2() {
             <div className="Home_Section2_parte_direita_texto">
                 <p>
                     <Trans i18nKey="home.section2.paragrafo1">
-                        A <span>Python Brasil 2026</span> é a maior conferência sobre linguagem de programação Python do Brasil e da América Latina.
+                        A <span>Python Brasil 2026</span> <span>Python Brasil 2026</span> é a maior conferência sobre linguagem de programação Python do Brasil e da América Latina.
                     </Trans>
                 </p>
                 <p>{t("home.section2.paragrafo2")}</p>
